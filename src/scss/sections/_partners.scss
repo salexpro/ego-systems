@@ -1,0 +1,23 @@
+.partners{
+    padding-top: 46px;
+    padding-bottom: 46px;
+    &_items{
+        padding: 40px 0;
+        border-top: 1px solid rgba($white, 0.05);
+        border-bottom: 1px solid rgba($white, 0.05);
+    }
+    .owl{
+        &-carousel{
+            .owl{
+                &-stage{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                &-item{
+                    flex: 0 0 auto;
+                }
+            }
+        }
+    }
+}

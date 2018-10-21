@@ -17,9 +17,9 @@ html, body{
 :-webkit-autofill:hover,
 :-webkit-autofill:focus,
 :-webkit-autofill:active {
-    -webkit-box-shadow: 0 0 0px 1000px $white inset;
+    -webkit-box-shadow: 0 0 0 300px #3d4142 inset;
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: $black;
+    -webkit-text-fill-color: $white;
 }
 
 
@@ -28,26 +28,50 @@ html, body{
     min-width: 320px;
 }
 
-[type='text'],
-[type='password'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='month'],
-[type='week'],
-[type='email'],
-[type='number'],
-[type='search'],
-[type='tel'],
-[type='time'],
-[type='url'],
-[type='color'],
-textarea,
-select,
-button {
-    outline: none;
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{
+    letter-spacing: 0.32px;
 }
 
-button {
-    cursor: pointer;
+[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    z-index: -1;
+    width: 24px;
+    height: 24px;
+    &:checked + label{
+        &::before{
+            box-shadow: inset 0 0 0px #373b40;
+            // box-shadow: inset 0 0 10px transparent;
+        }
+    }
+    + label{
+        user-select: none;
+        display: inline-flex;
+        &::before{
+            content: '';
+            flex: 0 0 20px;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 2px;
+            margin-right: 12px;
+            border: 2px solid $secondary-color;
+            border-radius: 50%;
+            background-position: center;
+            background-size: 18px 18px;
+            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMEM0LjQ4IDAgMCA0LjQ4IDAgMTBDMCAxNS41MiA0LjQ4IDIwIDEwIDIwQzE1LjUyIDIwIDIwIDE1LjUyIDIwIDEwQzIwIDQuNDggMTUuNTIgMCAxMCAwWk0xMCAxOEM1LjU5IDE4IDIgMTQuNDEgMiAxMEMyIDUuNTkgNS41OSAyIDEwIDJDMTQuNDEgMiAxOCA1LjU5IDE4IDEwQzE4IDE0LjQxIDE0LjQxIDE4IDEwIDE4Wk0xMy44OCA2LjI5TDggMTIuMTdMNi4xMiAxMC4yOUM1LjczIDkuOSA1LjEgOS45IDQuNzEgMTAuMjlDNC4zMiAxMC42OCA0LjMyIDExLjMxIDQuNzEgMTEuN0w3LjMgMTQuMjlDNy42OSAxNC42OCA4LjMyIDE0LjY4IDguNzEgMTQuMjlMMTUuMyA3LjdDMTUuNjkgNy4zMSAxNS42OSA2LjY4IDE1LjMgNi4yOUMxNC45MSA1LjkgMTQuMjcgNS45IDEzLjg4IDYuMjlaIiBmaWxsPSIjRjY3MzI5Ii8+PC9zdmc+);
+            box-shadow: inset 0 0 0 10px #373b40;
+            transition: 250ms;
+        }
+    }
+}
+
+a{
+    transition: 200ms;
+}
+
+svg{
+    display: block;
 }

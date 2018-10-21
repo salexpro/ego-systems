@@ -1,0 +1,15 @@
+.contact{
+    padding-top: 46px;
+    padding-bottom: 40px;
+    &_header{
+        @extend .h3;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
+    &_descr{
+        font-size: 15px;
+        margin: 0;
+        color: rgba($white, 0.6);
+    }
+}

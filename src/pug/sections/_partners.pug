@@ -1,0 +1,48 @@
+-
+    const partners = [
+        {
+            name: 'a-bank',
+            title: 'a) банк'
+        },
+        {
+            name: 'mdt',
+            title: 'МДТ'
+        },
+        {
+            name: 'volna',
+            title: 'НПО Завод "Волна"'
+        },
+        {
+            name: 'mns',
+            title: 'МНС'
+        },
+        {
+            name: 'concert',
+            title: 'Петербург-Концерт'
+        },
+        // here
+        {
+            name: 'a-bank',
+            title: 'a) банк'
+        },
+        {
+            name: 'mdt',
+            title: 'МДТ'
+        },
+        {
+            name: 'volna',
+            title: 'НПО Завод "Волна"'
+        },
+        {
+            name: 'mns',
+            title: 'МНС'
+        },
+        {
+            name: 'concert',
+            title: 'Петербург-Концерт'
+        }]
+section.grid-container.partners
+    .owl-carousel.partners_items
+        each partner in partners
+            .partners_item
+                img(src=`/assets/img/partners/${partner.name}.png` srcset=`/assets/img/partners/${partner.name}.png 1x, /assets/img/partners/${partner.name}@2x.png 2x` alt=partner.title)

@@ -1,0 +1,11 @@
+.menu{
+    font-family: $header-font-family;
+    font-size: 16px;
+    font-weight: 500;
+    a{
+        color: $medium-gray;
+        &:hover, &:focus{
+            color: $white;
+        }
+    }
+}

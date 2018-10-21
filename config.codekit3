@@ -57,6 +57,13 @@
 		"oAP": "/build/docs",
 		"oF": 0
 		},
+	"/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/favicon.ico",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 1,
@@ -73,12 +80,32 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js": {
 		"ft": 64,
 		"ma": 1,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
@@ -102,6 +129,94 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 1
+		},
+	"/node_modules/owl.carousel/dist/owl.carousel.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/dist/owl.carousel.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"/node_modules/owl.carousel/src/scss/_animate.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/src/css/_animate.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/owl.carousel/src/scss/_autoheight.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/src/css/_autoheight.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/owl.carousel/src/scss/_core.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/src/css/_core.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/owl.carousel/src/scss/_lazyload.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/src/css/_lazyload.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/owl.carousel/src/scss/_video.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/src/css/_video.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/node_modules/owl.carousel/src/scss/owl.carousel.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/node_modules/owl.carousel/src/css/owl.carousel.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"/package-lock.json": {
 		"ft": 524288,
@@ -137,11 +252,94 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"/src/assets/favicon/.gitkeep": {
+	"/src/assets/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 2641,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 7287,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 1873,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/browserconfig.xml": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "/build/assets/favicon/.gitkeep",
+		"oAP": "/build/assets/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/src/assets/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 386,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 531,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 1129,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 1
+		},
+	"/src/assets/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "/build/assets/favicon/site.webmanifest",
 		"oF": 0
 		},
 	"/src/assets/fonts/.gitkeep": {
@@ -151,12 +349,125 @@
 		"oAP": "/build/assets/fonts/.gitkeep",
 		"oF": 0
 		},
-	"/src/assets/img/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/build/assets/img/.gitkeep",
-		"oF": 0
+	"/src/assets/img/logo.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "/build/assets/img/logo.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1103269715967,
+		"prP": 1
+		},
+	"/src/assets/img/partners/a-bank.png": {
+		"ft": 32768,
+		"iS": 2728,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/a-bank.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/a-bank@2x.png": {
+		"ft": 32768,
+		"iS": 4761,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/a-bank@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/concert.png": {
+		"ft": 32768,
+		"iS": 3729,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/concert.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/concert@2x.png": {
+		"ft": 32768,
+		"iS": 8418,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/concert@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/mdt.png": {
+		"ft": 32768,
+		"iS": 2646,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/mdt.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/mdt@2x.png": {
+		"ft": 32768,
+		"iS": 5698,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/mdt@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/mns.png": {
+		"ft": 32768,
+		"iS": 2261,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/mns.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/mns@2x.png": {
+		"ft": 32768,
+		"iS": 5043,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/mns@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/volna.png": {
+		"ft": 32768,
+		"iS": 3766,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/volna.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/partners/volna@2x.png": {
+		"ft": 32768,
+		"iS": 8524,
+		"oA": 0,
+		"oAP": "/build/assets/img/partners/volna@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/src/CNAME": {
 		"cB": 0,
@@ -192,6 +503,15 @@
 		"oA": 1,
 		"oAP": "/build/_layout.html",
 		"oF": 1,
+		"oS": 0
+		},
+	"/src/pug/components/_head.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_head.html",
+		"oF": 0,
 		"oS": 0
 		},
 	"/src/pug/components/_icons.pug": {
@@ -239,6 +559,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/sections/_contact.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_contact.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/sections/_footer.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -248,21 +577,75 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/sections/_head.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "/build/_head.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"/src/pug/sections/_header.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_info.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_info.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_news.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_news.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_offers.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_offers.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_partners.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_partners.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_projects.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_projects.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_questions.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_questions.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_solutions.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_solutions.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -331,6 +714,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_form.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_form.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_menu.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_menu.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_offcanvas.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -344,6 +753,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_owl.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_owl.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_popup.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -353,6 +775,45 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_popup.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_tabs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_tabs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/components/_typography.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_typography.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_contact.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_contact.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -382,6 +843,97 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/src/scss/sections/_info.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_info.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_news.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_news.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_offers.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_offers.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_partners.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_partners.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_projects.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_projects.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_questions.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_questions.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_solutions.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_solutions.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -392,9 +944,9 @@
 	"creationDate": 505831586,
 	"displayValue": "EGO Systems",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-doge",
+	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561673984.64488697
+	"lastBuiltDate": 561845979.37373996
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -635,7 +1187,7 @@
 	"bowerSaveDevDependencies": 1,
 	"bowerUseExactVersion": 0,
 	"browserRefreshDelay": 0,
-	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead, IE >= 9",
+	"browserslistString": ">0.2%, last 2 versions, Firefox ESR, not dead",
 	"buildFolderActive": 1,
 	"buildFolderName": "build",
 	"cleanBuild": 1,

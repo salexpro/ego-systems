@@ -1,0 +1,51 @@
+.projects{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &_carousel{
+        // padding-top: 8px;
+    }
+    &_item{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 315px;
+        background-size: cover;
+        border-radius: $global-radius;
+        box-shadow: 0px 6px 20px #1D2023;
+        overflow: hidden;
+        padding: 20px 16px 20px 24px;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(180deg, rgba(48, 50, 55, 0.2) 0%, rgba(48, 50, 55, 0.4) 20.44%, rgba(48, 50, 55, 0.6) 46.41%, #303237 74.03%, #303237 100%);
+        }
+        &_title{
+            margin-top: auto;
+            padding-bottom: 4px;
+            &:after{
+                display: none;
+            }
+        }
+        &_bottom{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+            color: rgba($white, 0.6);
+        }
+        &_more{
+            display: flex;
+            i{
+                margin-left: 2px;
+            }
+        }
+    }
+    &_bottom{
+        text-align: center;
+    }
+}

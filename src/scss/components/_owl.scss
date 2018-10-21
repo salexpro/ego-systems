@@ -1,0 +1,52 @@
+.owl{
+    &-carousel{
+        img{
+            width: auto;
+        }
+        .owl{
+            &-dots{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 22px 0;
+            }
+            &-nav{
+                button.owl-prev, button.owl-next{
+                    position: absolute;
+                    transform: translateY(-50%);
+                    transition: 500ms;
+                    &.disabled{
+                        opacity: 0.25;
+                    }
+                }
+                button.owl-prev{
+                    left: -95px;
+                }
+                button.owl-next{
+                    right: -95px;
+                }
+            }
+        }
+        button.owl-dot{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+            border: 1px solid transparent;
+            background-color: rgba($white, 0.25);
+            background-clip: content-box;
+            transition: 500ms;
+            &.active{
+                background-color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+    &-nav{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
+    
+}

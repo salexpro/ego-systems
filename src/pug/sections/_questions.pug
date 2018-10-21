@@ -1,0 +1,19 @@
+section.grid-container.questions
+    h2.text-center.questions_header
+        | Остались вопросы?
+    p.questions_descr
+        | Отправьте свои контактные данные и мы свяжемся с Вами как можно скорее
+    form.grid-x.grid-margin-x.align-center.form.form--questions
+        .cell.large-4.form_input
+            input(type="text" name="name" placeholder="Имя" required)
+        .cell.large-4.form_input
+            input(type="tel" name="phone" placeholder="Телефон" required)
+        .cell.large-4
+            button.button.secondary.expanded.icon
+                | Отправить
+                i
+                    +icon('plane', [20, 20], '#fff')
+        .cell.shrink.form_input
+            input(type="checkbox" id="q_agreement" name="agreement" value="true" checked required)
+            label(for="q_agreement")
+                | Я даю разрешение на обработку персональных данных

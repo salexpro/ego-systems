@@ -1,3 +1,73 @@
 .footer{
-    
+    background-color: #212529;
+    &_inner{
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 40px;
+    }
+    &_top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 120px;
+        box-shadow: inset 0 -1px 0 rgba($white, 0.05);
+    }
+    &_content{
+        padding-top: 32px;
+    }
+    &_item{
+        margin: 0 40px 0 0;
+        &--last{
+            margin: 0 0 0 auto;
+            li{
+                display: flex;
+                color: rgba($white, 0.6);
+                i{
+                    margin-right: 16px;
+                }
+                p{
+                    line-height: 1.375;
+                    letter-spacing: 0.32px;
+                }
+                a{
+                    padding: 0;
+                    line-height: normal;
+                }
+                small{
+                    font-weight: 400;
+                    font-family: $body-font-family;
+                    font-size: 13px;
+                }
+            }
+        }
+        &_phone{
+            a{
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+        &_menu{
+            font-size: 13px;
+            font-family: $body-font-family;
+            a{
+                padding: 0;
+                margin-bottom: 8px;
+                line-height: inherit;
+                color: rgba($white, 0.6);
+            }
+        }
+    }
+    &_bottom{
+        box-shadow: inset 0 1px 0 rgba($white, 0.05);
+        height: 40px;
+        margin-top: 22px;
+        color: rgba($white, 0.6);
+        a{
+            color: rgba($white, 0.6);
+            text-decoration: underline;
+            &:hover, &:focus{
+                text-decoration: none;
+            }
+        }
+    }
 }

@@ -1,0 +1,23 @@
+mixin solution(icon, title, descr)
+    a.cell.solutions_item(href="#")
+        span.solutions_item_icon
+            +icon(...icon)
+        h3.secondary.solutions_item_title
+            =title
+        if descr
+            p.solutions_item_descr
+                !=descr
+        span.solutions_item_bottom
+            | Услуги и цены
+            +icon('arrow_right', [24, 24], '#adb5bd')
+
+section.grid-container.solutions
+    h1.text-center.solutions_header
+        | Меняем впечатление об охранных системах
+    .grid-x.grid-margin-x.large-up-3
+        +solution(['bussines', [62, 64], 'none',, '#fff'], 'Охрана бизнеса', 'Тревожная и охранная сигнализация <br>Установка систем видеонаблюдения <br>Физическая охрана')
+        +solution(['apartment', [64, 64], 'none',, '#fff'], 'Охрана квартир', 'Тревожная и охранная сигнализация <br>Установка систем видеонаблюдения')
+        +solution(['cottage', [64, 60], 'none',, '#fff'], 'Охрана коттеджей', 'Тревожная и охранная сигнализация <br>Установка систем видеонаблюдения <br>Физическая охрана')
+        +solution(['bodyguard', [64, 52], 'none',, '#fff'], 'Личная охрана')
+        +solution(['event', [60, 64], 'none',, '#fff'], 'Охрана мероприятий')
+        +solution(['complex', [56, 64], '#fff'], 'Комплексная охрана')

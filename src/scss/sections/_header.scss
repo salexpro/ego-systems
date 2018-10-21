@@ -1,3 +1,21 @@
 .header{
-    
+    // background: #1d2125;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 40px;
+    font-family: $button-font-family;
+    font-size: 16px;
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        box-shadow: inset 0 -1px 0 rgba($white, 0.05);
+    }
+    &_nav{
+
+    }
+    &_contact{
+        font-weight: 700;
+    }
 }

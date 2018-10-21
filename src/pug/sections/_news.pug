@@ -1,0 +1,15 @@
+section.grid-container.news
+    h2.text-center
+        | Новости и события
+    .grid-x.grid-margin-x.large-up-3
+        each _ in Array(3)
+            .cell.news_item
+                h3.lead.secondary
+                    | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                p.news_item_descr
+                    | Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+                .news_item_bottom
+                    time.news_item_date(datetime="10.07.2018")
+                        | 10.07.2018
+                    a.news_item_more(href="#")
+                        | Читать далее

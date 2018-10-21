@@ -1,1 +1,71 @@
+mixin foot_item(header, list)
+    .cell.auto.footer_item
+        .h3.secondary
+            =header
+        ul.menu.vertical.footer_item_menu
+            each item in list
+                li
+                    a(href="#")
+                        =item
+
 footer.footer
+    .footer_inner
+        .footer_top
+            a.footer_logo(href="/")
+                +icon('logo', [147, 52])
+            nav
+                +menu
+            .footer_button
+                a.button.primary(href="#")
+                    | Бесплатная консультация
+        .grid-x.footer_content
+            +foot_item('Охрана бизнеса', [
+                'Тревожная и охранная сигнализация', 
+                'Организация контрольно-пропускного режима', 
+                'Физическая охрана',
+                'Установка систем видеонаблюдения'])
+            +foot_item('Охрана квартир', [
+                'Тревожная и охранная сигнализация', 
+                'Установка систем видеонаблюдения'])
+            +foot_item('Охрана коттеджей', [
+                'Тревожная и охранная сигнализация', 
+                'Установка систем видеонаблюдения',
+                'Физическая охрана'])
+            +foot_item('Личная охрана', [
+                'Телохранители', 
+                'Охрана VIP клиентов',
+                'Сопровождение'])
+            .cell.shrink.foot_item.footer_item--last
+                ul.menu.vertical
+                    li.footer_item_phone
+                        i
+                            +icon('phone', [20, 20], '#228be6')
+                        p
+                            a(href="tel:88126409137")
+                                | 8 (812) 640-91-37
+                            small ПН-ВС с 10:00 до 21:00
+                    li
+                        i
+                            +icon('at', [20, 20], '#A6A8A9')
+                        p
+                            a(href="mailto:info@ego-system.ru" target='_blank')
+                                | info@ego-system.ru
+                    li
+                        i
+                            +icon('mark', [20, 20], '#A6A8A9')
+                        p
+                            | г. Санкт-Петербург,
+                            br
+                            | наб. Обводного канала,
+                            br
+                            | дом 93А
+
+        .grid-x.align-middle.footer_bottom
+            p.cell.shrink.footer_item
+                | Copyright © 2018, ЭГО-Система. Копирование материалов строго запрещено
+            a.cell.shrink.footer_item(href="#")
+                | Лицензионное соглашение
+            a.cell.shrink.footer_item(href="#")
+                | Политика конфиденциальности
+            a.cell.shrink.footer_item.footer_item--last(href="https://zig-zag.agency/" target='_blank')
+                | Design by Zig-Zag

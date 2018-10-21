@@ -1,0 +1,10 @@
+.offers{
+    padding-top: 50px;
+    padding-bottom: 46px;
+    &_offer{
+        &_descr{
+            color: rgba($white, 0.6);
+            margin: 0;
+        }
+    }
+}

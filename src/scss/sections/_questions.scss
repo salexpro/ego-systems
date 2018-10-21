@@ -1,0 +1,13 @@
+.questions{
+    padding-top: 80px;
+    padding-bottom: 84px;
+    &_header{
+        margin-bottom: 4px;
+    }
+    &_descr{
+        font-size: 15px;
+        text-align: center;
+        color: rgba($white, 0.6);
+        margin-bottom: 53px;
+    }
+}

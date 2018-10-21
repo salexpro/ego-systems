@@ -1,0 +1,22 @@
+.news{
+    padding-top: 40px;
+    padding-bottom: 96px;
+    &_item{
+        display: flex;
+        flex-direction: column;
+        &_descr{
+            color: rgba($white, 0.6);
+            margin-bottom: 20px;
+        }
+        &_bottom{
+            margin-top: auto;
+            border-top: 1px solid rgba($white, 0.05);
+            padding-top: 18px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_date{
+            color: rgba($white, 0.6);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+section.grid-container.contact
+    .grid-x.grid-margin-x.align-justify.align-middle
+        .cell.auto
+            h2.contact_header
+                | Вам что-то угрожает?
+            p.contact_descr
+                | Отправьте свои контактные данные и мы свяжемся
+                br
+                | с Вами как можно скорее
+        form.cell.large-5.form(action="")
+            .form_input
+                input(type="text" name="name" placeholder="Имя" required)
+            .form_input
+                input(type="tel" name="phone" placeholder="Телефон" required)
+            .form_input
+                input(type="checkbox" id="agreement" name="agreement" value="true" checked required)
+                label(for="agreement")
+                    | Я даю разрешение на обработку персональных данных
+            button.button.expanded.secondary.icon
+                | Отправить
+                i
+                    +icon('plane', [20, 20], '#fff')

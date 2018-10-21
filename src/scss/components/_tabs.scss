@@ -1,0 +1,23 @@
+.tabs{
+    display: table;
+    margin: auto;
+    border-radius: $global-radius;
+    margin-bottom: 50px;
+    &-title{
+        border-right: 1px solid rgba($white, 0.1);
+        min-width: 238px;
+        text-align: center;
+        letter-spacing: 0.32px;
+        font-family: $header-font-family;
+        &:last-child{
+            border: 0;
+        }
+        a{
+            font-weight: 500;
+        line-height: 20px;
+        }
+    }
+    &-content{
+        border: 0;
+    }
+}

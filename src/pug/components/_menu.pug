@@ -1,3 +1,31 @@
 mixin menu(mod)
+    -
+        const menu = [
+            {
+                title: 'О компании',
+                link: '#about'
+            },
+            {
+                title: 'Преимущества',
+                link: '#benefits'
+            },
+            {
+                title: 'Услуги',
+                link: '#services'
+            },
+            {
+                title: 'Новости и события',
+                link: '#news'
+            },
+            {
+                title: 'Контакты',
+                link: '#contacts'
+            }
+        ]
+
     ul.menu(class=mod)
+        each item in menu
+            li
+                a(href=item.link)
+                    =item.title
         
