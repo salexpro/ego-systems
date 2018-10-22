@@ -9,6 +9,7 @@ button {
         box-shadow: 0 5px 20px rgba(34, 139, 230, 0.3), 0 2px 5px rgba(34, 139, 230, 0.3);
         &:hover, &:focus{
             box-shadow: 0 5px 20px rgba(34, 139, 230, 0.45), 0 2px 5px rgba(34, 139, 230, 0.6);
+            background-color: $primary_dark;
         }
     }
     &.secondary{

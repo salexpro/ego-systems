@@ -41,8 +41,37 @@
             name: 'concert',
             title: 'Петербург-Концерт'
         }]
+
+mixin item
+    .cell.partners_item
+        .partners_item_top
+            .partners_item_logo
+                img(src="assets/img/partners/a-bank.png" srcset="assets/img/partners/a-bank.png 1x, assets/img/partners/a-bank@2x.png 2x" alt="a) банк")
+            .partners_item_title
+                h3.partners_item_name
+                    | Банк Александровский
+                a.partners_item_link(href='https://alexbank.ru' target='_blank')
+                    | alexbank.ru
+        p.partners_item_descr
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        a.partners_item_doc(href="#" download)
+            | Благодарственное письмо (PDF)
+            i
+                +icon('download', [24, 24], '#fff')
+
 section.grid-container.partners
-    .owl-carousel.partners_items
+    if page == 'about'
+        h2.text-center
+            | Партнеры
+        p.lead.text-center
+            | На сегодняшний день, «ОП «ЭГО-Система» предоставляет свои услуги более чем 50 различным компаниям.
+            br
+            | С каждым месяцем всё больше предприятий становятся постоянными клиентами агентства
+    .owl-carousel.partners_carousel
         each partner in partners
-            .partners_item
-                img(src=`/assets/img/partners/${partner.name}.png` srcset=`/assets/img/partners/${partner.name}.png 1x, /assets/img/partners/${partner.name}@2x.png 2x` alt=partner.title)
+            .partners_img
+                img(src=`assets/img/partners/${partner.name}.png` srcset=`assets/img/partners/${partner.name}.png 1x, assets/img/partners/${partner.name}@2x.png 2x` alt=partner.title)
+    if page == 'about'
+        .grid-x.grid-margin-x.large-up-2.partners_items
+            each _ in Array(4)
+                +item

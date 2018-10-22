@@ -486,6 +486,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"/src/js/components/_carousel.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/build/js/components/_carousel.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"/src/js/components/fastnav.js": {
 		"ft": 64,
 		"ma": 0,
@@ -550,12 +560,30 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/about.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/about.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
 		"ft": 512,
 		"oA": 0,
 		"oAP": "/build/index.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_about.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_about.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -805,6 +833,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_about.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_about.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_contact.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -946,7 +987,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561845979.37373996
+	"lastBuiltDate": 561914621.97654402
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

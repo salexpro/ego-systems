@@ -1,6 +1,9 @@
 .solutions{
     padding-top: 46px;
     padding-bottom: 50px;
+    &_items{
+        margin-top: 50px;
+    }
     &_item{
         border-radius: $global-radius;
         background: rgba($white, 0.07);

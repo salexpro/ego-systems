@@ -6,28 +6,47 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js';
 @codekit-prepend quiet '../../node_modules/owl.carousel/dist/owl.carousel.min';
+
+@codekit-append quiet 'components/_carousel.js';
 */
 
 $(document).foundation();
 
-$('.partners_items').owlCarousel({
-    items: 5,
-    margin: 49,
-    autoWidth: true,
-    loop: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    dots: false
-});
+const header = $('.header');
+let scrolling = false,
+    prev_top = 0,
+    scrollDelta = 10,
+    scrollOffset = 300;
 
-$('.projects_carousel').owlCarousel({
-    items: 2,
-    nav: true,
-    navText: [
-        '<svg width="35" height="87" viewBox="0 0 35 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M34.9956 2.42554L33.3557 0.304199L1.63989 41.332L0 43.4534L1.63989 45.5747L33.3601 86.6083L35 84.4869L3.27979 43.4534L34.9956 2.42554Z" fill="white" fill-opacity="0.25"/></svg>',
-        '<svg width="35" height="87" viewBox="0 0 35 87" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M33.3601 45.2762L1.64417 86.3041L0.00427246 84.1827L31.7202 43.1549L0 2.12134L1.63977 0L33.3601 41.0336L35 43.1549L33.3601 45.2762Z" fill="white" fill-opacity="0.25"/></svg>'
-    ],
-    margin: 30,
-    smartSpeed: 500,
-    navSpeed: 700
+const header_fill = () => {
+    if (header.offset().top > 40) {
+        header.addClass('is_filled');
+    } else if (!$('html').hasClass('is-reveal-open')){
+        header.removeClass('is_filled');
+    }
+}
+
+const auto_hide = () => {
+    const curr_top = $(window).scrollTop();
+
+    if (prev_top - curr_top > scrollDelta) {
+        //if scrolling up...
+        header.removeClass('is_hidden');
+    } else if (curr_top - prev_top > scrollDelta && curr_top > scrollOffset) {
+        //if scrolling down...
+        header.addClass('is_hidden');
+    }
+
+    prev_top = curr_top;
+    scrolling = false;
+}
+
+header_fill();
+
+$(window).scroll(() => {
+    header_fill();
+    if (!scrolling) {
+        scrolling = true;
+        (!window.requestAnimationFrame) ? setTimeout(auto_hide, 250): requestAnimationFrame(auto_hide);
+    }
 });

@@ -24,7 +24,9 @@ h3, .h3{
         width: 64px;
         border-bottom: 2px solid $primary-color;
     }
-    &.lead{
-        font-weight: 500;
-    }
+}
+
+.lead{
+    font-family: $header-font-family;
+    font-weight: 500;
 }

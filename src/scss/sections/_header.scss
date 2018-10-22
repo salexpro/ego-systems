@@ -1,16 +1,34 @@
 .header{
-    // background: #1d2125;
-    max-width: 1440px;
+    width: 100%;
     margin: auto;
     padding: 0 40px;
     font-family: $button-font-family;
     font-size: 16px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    transition: background 300ms, transform 500ms;
+    &.is_filled{
+        background: #1d2125;
+        box-shadow: inset 0 -1px 0 rgba($white, 0.05);
+        .header_inner{
+            box-shadow: none;
+        }
+    }
+    &.is_hidden{
+        transform: translate(-50%, -100%);
+    }
     &_inner{
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100px;
         box-shadow: inset 0 -1px 0 rgba($white, 0.05);
+        max-width: 1360px;
+        margin: auto;
+        transition: 300ms;
     }
     &_nav{
 
