@@ -1,0 +1,25 @@
+.advantages{
+    &_items{
+        margin-top: 54px;
+    }
+    &_item{
+        display: flex;
+        margin-bottom: 33px;
+        &_icon{
+            flex: 0 0 50px;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+        &_title{
+            padding: 0;
+            &::after{
+                display: none;
+            }
+        }
+        &_descr{
+            margin: 0;
+            font-size: 15px;
+        }
+    }
+}

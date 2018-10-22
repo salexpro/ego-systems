@@ -3,29 +3,29 @@ mixin menu(mod)
         const menu = [
             {
                 title: 'О компании',
-                link: './about.html'
+                link: 'about'
             },
             {
                 title: 'Преимущества',
-                link: '#benefits'
+                link: 'advantages'
             },
             {
                 title: 'Услуги',
-                link: '#services'
+                link: 'services'
             },
             {
                 title: 'Новости и события',
-                link: '#news'
+                link: 'news'
             },
             {
                 title: 'Контакты',
-                link: '#contacts'
+                link: 'contacts'
             }
         ]
 
     ul.menu(class=mod)
         each item in menu
             li
-                a(href=item.link)
+                a(href=`${item.link}.html`)
                     =item.title
         

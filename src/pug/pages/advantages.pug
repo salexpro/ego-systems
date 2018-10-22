@@ -1,0 +1,11 @@
+extends ../_layout
+block const
+    -
+        const page = 'advantages'
+        const name = 'О компании'
+block content
+    +breadcrumbs([['Главная', 'index'], ['О компании', 'about'], ['Преимущества', 'advantages']])
+    include ../sections/_advantages
+    include ../sections/_partners
+    include ../sections/_news
+    include ../sections/_questions

@@ -1,0 +1,8 @@
+mixin breadcrumbs(items)
+    ul.menu.breadcrumbs(itemscope itemtype='http://schema.org/BreadcrumbList')
+        each item, i in items
+            li(itemprop='itemListElement' itemscope itemtype='http://schema.org/ListItem')
+                a(itemprop='item', href=item[1])
+                    span(itemprop='name')
+                        =item[0]
+                meta(itemprop='position', content=i+1)

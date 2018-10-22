@@ -1,0 +1,21 @@
+mixin advantage
+    .cell.advantages_item
+        .advantages_item_icon
+        .advantages_item_content
+            h3.advantages_item_title
+                | Lorem ipsum dolor
+            p.advantages_item_descr
+                | Lorem ipsum dolor sit amet, consecr adipiscing elit. Aenean commodo igula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+
+section.grid-container.advantages
+    h1.text-center
+        | Преимущества работы с нами
+    p.lead.text-center
+        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+        br
+        | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+        br
+        | pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+    .grid-x.grid-margin-x.large-up-2.advantages_items
+        each _ in Array(8)
+            +advantage

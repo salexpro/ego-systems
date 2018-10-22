@@ -1,0 +1,20 @@
+.breadcrumbs{
+    font-size: 13px;
+    font-family: $body-font-family;
+    justify-content: center;
+    margin: 48px 0 34px;
+    li + li{
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: rgba($white, 0.25);
+        }
+    }
+}

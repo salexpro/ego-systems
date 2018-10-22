@@ -515,6 +515,15 @@
 		"oF": 1,
 		"oS": 0
 		},
+	"/src/pug/components/_breadcrumbs.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_breadcrumbs.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/components/_head.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -569,6 +578,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/advantages.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/advantages.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -584,6 +602,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_about.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_advantages.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_advantages.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -716,6 +743,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_breadcrumbs.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_breadcrumbs.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_button.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -842,6 +882,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/build/scss/css/_about.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/src/scss/sections/_advantages.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_advantages.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -987,7 +1040,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 561914621.97654402
+	"lastBuiltDate": 561931252.52436996
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
