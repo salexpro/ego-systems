@@ -18,7 +18,12 @@
         padding: 0 30px;
     }
     @include breakpoint(small down){
-        padding: 0 16px;
+        padding: 0 12px;
+        z-index: 14;
+        transition: background 400ms, transform 500ms;
+        &:not(.is_filled){
+            transition: background 0ms, transform 500ms;
+        }
     }
     &.is_filled{
         background: #1d2125;
@@ -45,6 +50,7 @@
         @include breakpoint(small down){
             height: 56px;
             padding: 0 4px;
+            transition: 400ms;
         }
     }
     &_logo{
@@ -71,7 +77,8 @@
             background: none !important;
             box-shadow: none !important;
             padding: 0;
-            margin-left: 14px;
+            margin-left: 8px;
+            border: 0;
             span{
                 display: none;
             }
@@ -91,20 +98,22 @@
         }
         @include breakpoint(small down){
             margin-right: 0;
+            position: relative;
         }
         &.is_active{
             .header_hamb{
                 &_icon{
-                    transform: rotate(-180deg) scale(-1, -1);
+                    transform: rotate(45deg);
                 }
                 &_line{
                     &--top{
-                        // stroke-dasharray: 14 82;
-                        stroke-dashoffset: -72px;
+                        stroke-dashoffset: -64px;
+                    }
+                    &--middle{
+                        transform: rotate(90deg);
                     }
                     &--bottom{
-                        // stroke-dasharray: 14 82;
-                        stroke-dashoffset: -72px;
+                        stroke-dashoffset: -64px;
                     }
                 }
             }
@@ -112,7 +121,14 @@
         &_icon{
             fill: none;
             transition: 400ms;
-            transform: rotate(0) scale(-1, -1);
+            transform: rotate(0);
+            @include breakpoint(small down){
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 50;
+            }
         }
         &_line{
             fill:none;
@@ -122,13 +138,17 @@
             stroke-linecap: round;
             stroke-dashoffset: 0;
             &--top{
-                stroke-dasharray: 40 82;
+                stroke-dasharray: 40 160;
             }
             &--middle{
-
+                stroke-dasharray: 40 142;
+                transform-origin: 50%;
+                transition: transform 400ms;
             }
             &--bottom{
-                stroke-dasharray: 40 82;
+                stroke-dasharray: 40 85;
+                transform-origin: 50%;
+                transition: transform 400ms, stroke-dashoffset 400ms;
             }
         }
     }
@@ -140,6 +160,16 @@
         padding: 0 12px;
         padding-top: constant(safe-area-inset-top);
         padding-top: env(safe-area-inset-top);
+        @include breakpoint(small down){
+            transform: translate(0, 0);
+            opacity: 0;
+            visibility: hidden;
+            transition: 400ms;
+            &.is-open{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
         &_top{
             display: flex;
             align-items: center;
@@ -149,6 +179,7 @@
             flex: 0 0 auto;
             @include breakpoint(small down){
                 padding: 10px 4px;
+                opacity: 0;
             }
             &_logo{
                 width: 60px;
@@ -205,5 +236,11 @@
                 }
             }
         }
+    }
+}
+
+.js-off-canvas-overlay{
+    @include breakpoint(small down){
+        display: none;
     }
 }

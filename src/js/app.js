@@ -54,8 +54,7 @@ $(window).scroll(() => {
 });
 
 $('.header_hamb').click(function () {
-    $(this).addClass('is_active');
-    $('#menu').foundation('open');
+    $(this).toggleClass('is_active');
 })
 
 $('#menu').on('closed.zf.offcanvas', () => {

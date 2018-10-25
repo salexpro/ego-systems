@@ -48,7 +48,25 @@ html, body{
             background: #1d2125;
             height: constant(safe-area-inset-top);
             height: env(safe-area-inset-top);
-            z-index: 3;
+            z-index: 15;
+            transition: 400ms;
+        }
+        &.is-open-left{
+            .header{
+                box-shadow: none;
+                transform: translateY(0);
+                background: $black;
+                &_inner{
+                    box-shadow: inset 0 -1px 0 rgba($white, 0.15) !important;
+                }
+                &:not(.is_filled){
+                    transition-delay: 200ms;
+                    transition: background 200ms, transform 500ms;
+                }
+            }
+            &::before{
+                background: $black;
+            }
         }
     }
 }

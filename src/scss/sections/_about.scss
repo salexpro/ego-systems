@@ -1,10 +1,30 @@
 .about{
     padding-top: 86px;
     padding-bottom: 20px;
+    @include breakpoint(medium down){
+        padding: 46px 30px 0;
+        max-width: 670px;
+        h1{
+            margin-bottom: 25px;
+        }
+        .lead br{
+            display: none;
+        }
+    }
+    @include breakpoint(small down){
+        padding: 30px 24px 0;
+    }
     &_content{
         margin-top: 86px;
+        color: rgba($white, 0.85);
+        @include breakpoint(medium down){
+            margin-top: 26px;
+        }
         p{
             font-size: 15px;
+            @include breakpoint(small down){
+                font-size: 14px;
+            }
         }
     }   
 }
