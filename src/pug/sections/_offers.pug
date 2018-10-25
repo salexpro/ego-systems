@@ -6,20 +6,21 @@ mixin offer(mod)
         p.offers_offer_descr
             | In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
 
-section.grid-container.offers
-    ul#offers.tabs(data-tabs)
-        li.tabs-title.is-active
-            a(href='#corporate', aria-selected='true')
-                | Корпоративные клиенты
-        li.tabs-title
-            a(data-tabs-target='private', href='#private')
-                | Частные клиенты
-    .tabs-content(data-tabs-content='offers')
-        #corporate.tabs-panel.is-active
-            .grid-x.grid-margin-x.large-up-4
-                each _ in Array(4)
-                    +offer
-        #private.tabs-panel
-            .grid-x.grid-margin-x.large-up-4
-                each _ in Array(4)
-                    +offer(2)
+section.offers
+    .grid-container
+        ul#offers.tabs(data-tabs)
+            li.tabs-title.is-active
+                a(href='#corporate', aria-selected='true')
+                    | Корпоративные клиенты
+            li.tabs-title
+                a(data-tabs-target='private', href='#private')
+                    | Частные клиенты
+        .tabs-content(data-tabs-content='offers')
+            #corporate.tabs-panel.is-active
+                .grid-x.grid-margin-x.align-center.large-up-4.medium-up-2
+                    each _ in Array(4)
+                        +offer
+            #private.tabs-panel
+                .grid-x.grid-margin-x.align-center.large-up-4.medium-up-2
+                    each _ in Array(4)
+                        +offer(2)

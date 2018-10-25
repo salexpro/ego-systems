@@ -30,7 +30,7 @@ $contrast-warnings: false;
 // @include foundation-responsive-embed;
 // @include foundation-label;
 // @include foundation-media-object;
-// @include foundation-off-canvas;
+@include foundation-off-canvas;
 // @include foundation-orbit;
 // @include foundation-pagination;
 // @include foundation-progress-bar;
@@ -67,6 +67,7 @@ $contrast-warnings: false;
 @import 'components/owl';
 @import 'components/form';
 @import 'components/breadcrumbs';
+@import 'components/details';
 // @import 'components/offcanvas';
 
 // Sections

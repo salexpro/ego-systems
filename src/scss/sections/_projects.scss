@@ -1,8 +1,23 @@
 .projects{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 65px;
+    @include breakpoint(small down){
+        padding: 25px 6px;
+    }
+    &_header{
+        @include breakpoint(small down){
+            margin-bottom: 33px;
+        }
+    }
     &_carousel{
-        // padding-top: 8px;
+        margin: 0 -15px;
+        position: relative;
+        &_inner{
+            overflow: hidden;
+            padding: 0 15px;
+            .owl-stage-outer{
+                overflow: visible;
+            }
+        }
     }
     &_item{
         position: relative;
@@ -14,18 +29,26 @@
         box-shadow: 0px 6px 20px #1D2023;
         overflow: hidden;
         padding: 20px 16px 20px 24px;
+        @include breakpoint(medium down){
+            padding: 18px 18px 18px 16px;
+        }
+        @include breakpoint(small down){
+            width: 327px;
+            padding-left: 12px;
+        }
         &::before{
             content: '';
             position: absolute;
+            width: 101%;
             top: 0;
             left: 0;
-            right: 0;
             bottom: 0;
             background-image: linear-gradient(180deg, rgba(48, 50, 55, 0.2) 0%, rgba(48, 50, 55, 0.4) 20.44%, rgba(48, 50, 55, 0.6) 46.41%, #303237 74.03%, #303237 100%);
         }
         &_title{
             margin-top: auto;
             padding-bottom: 4px;
+            font-size: 16px;
             &:after{
                 display: none;
             }
@@ -33,13 +56,19 @@
         &_bottom{
             position: relative;
             display: flex;
-            align-items: center;
+            align-items: baseline;
             justify-content: space-between;
             font-size: 15px;
             color: rgba($white, 0.6);
         }
         &_more{
             display: flex;
+            @include breakpoint(medium down){
+                width: 26px;
+                height: 24px;
+                overflow: hidden;
+                justify-content: flex-end;
+            }
             i{
                 margin-left: 2px;
             }

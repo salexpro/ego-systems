@@ -1,15 +1,41 @@
 .contact{
-    padding-top: 46px;
-    padding-bottom: 40px;
+    padding: 46px 15px 40px;
+    @include breakpoint(small down){
+        padding: 25px 6px;
+    }
     &_header{
         @extend .h3;
         font-size: 32px;
         font-weight: 400;
         margin-bottom: 16px;
+        @include breakpoint(medium down){
+            font-size: 26px;
+            padding-bottom: 14px;
+        }
+        @include breakpoint(small down){
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 0.48px;
+            padding-bottom: 18px;
+            &::after{
+                left: calc(50% - 32px);
+            }
+        }
     }
     &_descr{
         font-size: 15px;
         margin: 0;
         color: rgba($white, 0.6);
+        @include breakpoint(medium down){
+            br{
+                display: none;
+            }
+        }
+        @include breakpoint(small down){
+            font-size: 14px;
+            text-align: center;
+            margin: 0 auto 55px;
+            max-width: 350px;
+        }
     }
 }

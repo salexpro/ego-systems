@@ -2,14 +2,24 @@
     width: 100%;
     margin: auto;
     padding: 0 40px;
-    font-family: $button-font-family;
-    font-size: 16px;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     z-index: 2;
+    font-family: $button-font-family;
+    font-size: 16px;
     transition: background 300ms, transform 500ms;
+    margin-top: constant(safe-area-inset-top);
+    margin-top: env(safe-area-inset-top);
+    @include breakpoint(xlarge down){
+        padding: 0 25px;
+    }
+    @include breakpoint(xlarge down){
+        padding: 0 30px;
+    }
+    @include breakpoint(small down){
+        padding: 0 16px;
+    }
     &.is_filled{
         background: #1d2125;
         box-shadow: inset 0 -1px 0 rgba($white, 0.05);
@@ -18,7 +28,7 @@
         }
     }
     &.is_hidden{
-        transform: translate(-50%, -100%);
+        transform: translateY(-100%);
     }
     &_inner{
         display: flex;
@@ -29,11 +39,171 @@
         max-width: 1360px;
         margin: auto;
         transition: 300ms;
+        @include breakpoint(xlarge down){
+            height: 82px;
+        }
+        @include breakpoint(small down){
+            height: 56px;
+            padding: 0 4px;
+        }
+    }
+    &_logo{
+        @include breakpoint(small down){
+            width: 60px;
+        }
     }
     &_nav{
-
+        @include breakpoint(large down){
+            display: none;
+        }
     }
     &_contact{
         font-weight: 700;
+        @include breakpoint(large down){
+            margin: auto;
+        }
+        @include breakpoint(small down){
+            display: none;
+        }
+    }
+    &_button .button{
+        @include breakpoint(small down){
+            background: none !important;
+            box-shadow: none !important;
+            padding: 0;
+            margin-left: 14px;
+            span{
+                display: none;
+            }
+            i{
+                display: block;
+            }
+        }
+    }
+    &_hamb{
+        display: none;
+        width: 40px;
+        height: 40px;
+        margin-right: 22px;
+        margin-left: -8px;
+        @include breakpoint(large down){
+            display: block;
+        }
+        @include breakpoint(small down){
+            margin-right: 0;
+        }
+        &.is_active{
+            .header_hamb{
+                &_icon{
+                    transform: rotate(-180deg) scale(-1, -1);
+                }
+                &_line{
+                    &--top{
+                        // stroke-dasharray: 14 82;
+                        stroke-dashoffset: -72px;
+                    }
+                    &--bottom{
+                        // stroke-dasharray: 14 82;
+                        stroke-dashoffset: -72px;
+                    }
+                }
+            }
+        }
+        &_icon{
+            fill: none;
+            transition: 400ms;
+            transform: rotate(0) scale(-1, -1);
+        }
+        &_line{
+            fill:none;
+            transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+            stroke: $white;
+            stroke-width: 5.5;
+            stroke-linecap: round;
+            stroke-dashoffset: 0;
+            &--top{
+                stroke-dasharray: 40 82;
+            }
+            &--middle{
+
+            }
+            &--bottom{
+                stroke-dasharray: 40 82;
+            }
+        }
+    }
+
+    &_mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 12px;
+        padding-top: constant(safe-area-inset-top);
+        padding-top: env(safe-area-inset-top);
+        &_top{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 8px;
+            border-bottom: 1px solid rgba($white, 0.15);
+            flex: 0 0 auto;
+            @include breakpoint(small down){
+                padding: 10px 4px;
+            }
+            &_logo{
+                width: 60px;
+            }
+            &_button{
+                display: none;
+                @include breakpoint(small down){
+                    display: block;
+                }
+            }
+            &_close{
+                @include breakpoint(small down){
+                    order: -1;
+                }
+            }
+        }
+        &_menu{
+            margin: auto 13px;
+            padding: 20px 0;
+            @include breakpoint(small down){
+                width: 100%;
+                margin: auto;
+                max-width: 284px;
+            }
+            .menu{
+                font-size: 20px;
+                li + li{
+                    margin-top: 9px;
+                }
+            }
+        }
+        &_contact{
+            padding: 55px 0;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid rgba($white, 0.15);
+            border-bottom: 1px solid rgba($white, 0.15);
+            flex: 0 0 auto;
+            @include breakpoint(small down){
+                padding: 32px 0;
+            }
+            .menu{
+                font-size: 14px;
+            }
+        }
+        &_bottom{
+            padding: 24px 0;
+            text-align: center;
+            .button{
+                max-width: 272px;
+                margin: auto;
+                @include breakpoint(small down){
+                    max-width: 254px;
+                }
+            }
+        }
     }
 }

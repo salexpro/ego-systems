@@ -1,7 +1,16 @@
 header.header
     .header_inner
+        button.header_hamb
+            svg.header_hamb_icon(viewBox='0 0 100 100')
+                path.header_hamb_line.header_hamb_line--top(d='m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429')
+                path.header_hamb_line.header_hamb_line--middle(d='m 70,50 h -40')
+                path.header_hamb_line.header_hamb_line--bottom(d='m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429')
+
         a.header_logo(href="/")
-            img(src="/assets/img/logo.svg", alt="EGO Systems")
+            picture
+                source(media='(max-width: 1280px)' srcset='assets/img/logo_min.svg')
+                source(srcset='assets/img/logo.svg')
+                img(src='assets/img/logo.svg', alt='EGO Systems')
         nav.header_nav
             +menu
         .header_contact
@@ -9,4 +18,6 @@ header.header
                 | 8 (812) 640-91-37
         .header_button
             a.button.primary(href="#")
-                | Бесплатная консультация
+                span Бесплатная консультация
+                i
+                    +icon('chat', [24, 24], '#fff')

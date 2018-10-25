@@ -12,9 +12,15 @@ footer.footer
     .footer_inner
         .footer_top
             a.footer_logo(href="/")
-                +icon('logo', [147, 52])
-            nav
-                +menu
+                picture
+                    source(media='(max-width: 1280px)' srcset='assets/img/logo_min.svg')
+                    source(srcset='assets/img/logo.svg')
+                    img(src='assets/img/logo.svg', alt='EGO Systems')
+            nav.footer_nav
+                +menu()
+            .footer_contact
+                a(href="tel:88126409137")
+                    | 8 (812) 640-91-37
             .footer_button
                 a.button.primary(href="#")
                     | Бесплатная консультация
@@ -36,36 +42,14 @@ footer.footer
                 'Охрана VIP клиентов',
                 'Сопровождение'])
             .cell.shrink.foot_item.footer_item--last
-                ul.menu.vertical
-                    li.footer_item_phone
-                        i
-                            +icon('phone', [20, 20], '#228be6')
-                        p
-                            a(href="tel:88126409137")
-                                | 8 (812) 640-91-37
-                            small ПН-ВС с 10:00 до 21:00
-                    li
-                        i
-                            +icon('at', [20, 20], '#A6A8A9')
-                        p
-                            a(href="mailto:info@ego-system.ru" target='_blank')
-                                | info@ego-system.ru
-                    li
-                        i
-                            +icon('mark', [20, 20], '#A6A8A9')
-                        p
-                            | г. Санкт-Петербург,
-                            br
-                            | наб. Обводного канала,
-                            br
-                            | дом 93А
+                +details('footer')
 
-        .grid-x.align-middle.footer_bottom
-            p.cell.shrink.footer_item
+        .grid-x.align-middle.align-center.footer_bottom
+            p.cell.shrink.footer_item.footer_item--copy
                 | Copyright © 2018, ЭГО-Система. Копирование материалов строго запрещено
             a.cell.shrink.footer_item(href="#")
                 | Лицензионное соглашение
             a.cell.shrink.footer_item(href="#")
                 | Политика конфиденциальности
-            a.cell.shrink.footer_item.footer_item--last(href="https://zig-zag.agency/" target='_blank')
+            a.cell.shrink.footer_item.footer_item--last.footer_item--powered(href="https://zig-zag.agency/" target='_blank')
                 | Design by Zig-Zag

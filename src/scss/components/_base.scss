@@ -32,6 +32,29 @@ html, body{
     justify-content: flex-start;
     padding-top: 100px;
     min-height: 100vh;
+    @include breakpoint(xlarge down){
+        padding-top: 82px;
+    }
+    @include breakpoint(small down){
+        padding-top: 56px;
+        margin-top: constant(safe-area-inset-top);
+        margin-top: env(safe-area-inset-top);
+        &::before{
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #1d2125;
+            height: constant(safe-area-inset-top);
+            height: env(safe-area-inset-top);
+            z-index: 3;
+        }
+    }
+}
+
+.grid-container{
+    width: 100%;
 }
 
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea{

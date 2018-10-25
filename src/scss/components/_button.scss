@@ -1,5 +1,6 @@
 button {
     outline: none;
+    cursor: pointer;
 }
 
 .button{
@@ -30,5 +31,11 @@ button {
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;
+        i{
+            display: block;
+        }
+    }  
+    i{
+        display: none;
     }
 }

@@ -4,7 +4,9 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.mediaQuery.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js';
 @codekit-prepend quiet '../../node_modules/owl.carousel/dist/owl.carousel.min';
 
 @codekit-append quiet 'components/_carousel.js';
@@ -50,3 +52,12 @@ $(window).scroll(() => {
         (!window.requestAnimationFrame) ? setTimeout(auto_hide, 250): requestAnimationFrame(auto_hide);
     }
 });
+
+$('.header_hamb').click(function () {
+    $(this).addClass('is_active');
+    $('#menu').foundation('open');
+})
+
+$('#menu').on('closed.zf.offcanvas', () => {
+    $('.header_hamb').removeClass('is_active');
+})

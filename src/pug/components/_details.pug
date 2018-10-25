@@ -1,0 +1,29 @@
+mixin details(mod)
+    ul.menu.vertical.details
+        li.details_item.details_item--phone
+            i
+                +icon('phone', [20, 20], '#228be6')
+            p
+                a(href="tel:88126409137")
+                    | 8 (812) 640-91-37
+                small ПН-ВС с 10:00 до 21:00
+        li.details_item
+            i
+                +icon('at', [20, 20], '#A6A8A9')
+            p
+                a(href="mailto:info@ego-system.ru" target='_blank')
+                    | info@ego-system.ru
+        li.details_item
+            i
+                +icon('mark', [20, 20], '#A6A8A9')
+            p
+                if mod == 'footer'
+                    | г. Санкт-Петербург, 
+                    br
+                    | наб. Обводного канала, 
+                    br
+                    | дом 93А
+                else
+                    | г. Санкт-Петербург, наб.
+                    br
+                    | Обводного канала, дом 93А

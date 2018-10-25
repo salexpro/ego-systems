@@ -59,19 +59,20 @@ mixin item
             i
                 +icon('download', [24, 24], '#fff')
 
-section.grid-container.partners
-    if page != 'main'
-        h2.text-center
-            | Партнеры
-        p.lead.text-center
-            | На сегодняшний день, «ОП «ЭГО-Система» предоставляет свои услуги более чем 50 различным компаниям.
-            br
-            | С каждым месяцем всё больше предприятий становятся постоянными клиентами агентства
-    .owl-carousel.partners_carousel
-        each partner in partners
-            .partners_img
-                img(src=`assets/img/partners/${partner.name}.png` srcset=`assets/img/partners/${partner.name}.png 1x, assets/img/partners/${partner.name}@2x.png 2x` alt=partner.title)
-    if page == 'about'
-        .grid-x.grid-margin-x.large-up-2.partners_items
-            each _ in Array(4)
-                +item
+section.partners
+    .grid-container
+        if page != 'main'
+            h2.text-center
+                | Партнеры
+            p.lead.text-center
+                | На сегодняшний день, «ОП «ЭГО-Система» предоставляет свои услуги более чем 50 различным компаниям.
+                br
+                | С каждым месяцем всё больше предприятий становятся постоянными клиентами агентства
+        .owl-carousel.partners_carousel
+            each partner in partners
+                .partners_img
+                    img(src=`assets/img/partners/${partner.name}.png` srcset=`assets/img/partners/${partner.name}.png 1x, assets/img/partners/${partner.name}@2x.png 2x` alt=partner.title)
+        if page == 'about'
+            .grid-x.grid-margin-x.large-up-2.partners_items
+                each _ in Array(4)
+                    +item

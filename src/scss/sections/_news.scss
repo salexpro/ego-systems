@@ -1,12 +1,37 @@
 .news{
     padding-top: 40px;
-    // padding-bottom: 96px;
+    @include breakpoint(small down){
+        padding-top: 25px;
+    }
+    &_inner{
+        @include breakpoint(medium down){
+            max-width: 640px;
+            margin: auto;
+        }
+    }
     &_item{
         display: flex;
         flex-direction: column;
+        @include breakpoint(small down){
+            &.cell{
+                max-width: 450px;
+                margin: auto;
+            }
+        }
+        + .news_item{
+            @include breakpoint(medium down){
+                margin-top: 47px;
+            }
+            @include breakpoint(small down){
+                margin-top: 27px;
+            }
+        }
         &_descr{
             color: rgba($white, 0.6);
             margin-bottom: 20px;
+            @include breakpoint(small down){
+                margin-bottom: 17px;
+            }
         }
         &_bottom{
             margin-top: auto;

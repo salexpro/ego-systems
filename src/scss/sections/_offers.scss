@@ -1,7 +1,15 @@
 .offers{
-    padding-top: 50px;
-    padding-bottom: 46px;
+    padding: 50px 15px 0;
+    @include breakpoint(small down){
+        padding: 30px 6px 0;
+    }
     &_offer{
+        max-width: 290px;
+        margin-bottom: 46px;
+        @include breakpoint(small down){
+            max-width: 450px;
+            margin-bottom: 26px;
+        }
         &_descr{
             color: rgba($white, 0.6);
             margin: 0;

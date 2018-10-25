@@ -1,0 +1,38 @@
+.details{
+    @include breakpoint(small down){
+        font-size: 14px;
+    }
+    &_item{
+        display: flex;
+        color: rgba($white, 0.6);
+        @include breakpoint(small down){
+            min-width: 254px;
+        }
+        + li {
+            margin-top: 15px;
+        }
+        &--phone{
+            a{
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+        i{
+            margin-right: 16px;
+        }
+        p{
+            line-height: 1.375;
+            letter-spacing: 0.32px;
+            margin: 0;
+        }
+        a{
+            padding: 0;
+            line-height: normal;
+        }
+        small{
+            font-weight: 400;
+            font-family: $body-font-family;
+            font-size: 13px;
+        }
+    }
+}

@@ -3,7 +3,11 @@
     font-size: 16px;
     font-weight: 500;
     a{
-        color: $medium-gray;
+        // color: $medium-gray;
+        color: rgba(255, 255, 255, 0.6);
+        @include breakpoint(xlarge down){
+            padding: 0.7rem 15px;
+        }
         &:hover, &:focus{
             color: $white;
         }

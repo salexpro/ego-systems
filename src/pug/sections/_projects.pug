@@ -1,19 +1,22 @@
 
-section.grid-container.projects
-    h2.text-center.projects_header
-        | Реализованные проекты
-    .owl-carousel.projects_carousel
-        each _ in Array(6)
-            a.projects_item(href="#" style=`background-image:url(https://placeimg.com/900/630/arch?${Math.random()})`)
-                h3.lead.projects_item_title
-                    | Комплексная охрана 4-комнатной квартиры бизнесмена из Санкт-Петербурга
-                span.projects_item_bottom
-                    span.projects_item_type
-                        | Охрана квартир
-                    span.projects_item_more
-                        | Читать далее
-                        i
-                            +icon('arrow_right', [24, 24], '#adb5bd')
-    .projects_bottom
-        a.button.hollow.gray(href="#")
-            | Все проекты
+section.projects
+    .grid-container
+        h2.text-center.projects_header
+            | Реализованные проекты
+        .projects_carousel
+            .owl-carousel.projects_carousel_inner
+                each _ in Array(6)
+                    a.projects_item(href="#" style=`background-image:url(https://placeimg.com/900/630/arch?${Math.random()})`)
+                        h3.lead.projects_item_title
+                            | Комплексная охрана 4‑комнатной квартиры бизнесмена из Санкт‑Петербурга
+                        span.projects_item_bottom
+                            span.projects_item_type
+                                | Охрана квартир
+                            span.projects_item_more
+                                | Читать далее
+                                i
+                                    +icon('arrow_right', [24, 24], '#adb5bd')
+            .owl-navigation
+        .projects_bottom
+            a.button.hollow.gray(href="#")
+                | Все проекты

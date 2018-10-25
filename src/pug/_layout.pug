@@ -12,17 +12,18 @@ mixin icon(name, size, fill, viewbox, stroke)
 //- Components
 include components/_menu
 include components/_breadcrumbs
+include components/_details
 
 doctype html
 html(lang="ru")
     include components/_head
     body
-        main.off-canvas-content.wrap(data-off-canvas-content)
+        main.wrap(data-off-canvas-content)
             include sections/_header
             block content
             include sections/_footer
             //- include components/_popup
-        //- include components/_offcanvas
+        include components/_offcanvas
         block js
             script(src="./js/app.min.js")
         include components/_icons

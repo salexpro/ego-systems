@@ -3,21 +3,58 @@
     margin: auto;
     border-radius: $global-radius;
     margin-bottom: 50px;
+    @include breakpoint(small down){
+        margin-bottom: 32px;
+        display: flex;
+        max-width: 450px;
+    }
     &-title{
         border-right: 1px solid rgba($white, 0.1);
         min-width: 238px;
         text-align: center;
         letter-spacing: 0.32px;
         font-family: $header-font-family;
+        @include breakpoint(small down){
+            min-width: 50%;
+        }
         &:last-child{
             border: 0;
         }
         a{
             font-weight: 500;
-        line-height: 20px;
+            line-height: 20px;
+            transition: 300ms;
+            @include breakpoint(small down){
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100%;
+                line-height: 1.25;
+                letter-spacing: 0.24px;
+                padding: 10px 5px;
+                font-size: 12px;
+            }
         }
     }
     &-content{
         border: 0;
+        position: relative;
+        @include breakpoint(small down){
+            margin: 0 12px;
+        }
+    }
+    &-panel{
+        transition: 200ms;
+        opacity: 0;
+        display: block;
+        visibility: hidden;
+        position: relative;
+        &.is-active{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
