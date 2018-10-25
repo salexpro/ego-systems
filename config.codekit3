@@ -492,6 +492,83 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/splash/launch-1125x2436.png": {
+		"ft": 32768,
+		"iS": 28834,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1125x2436.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-1242x2148.png": {
+		"ft": 32768,
+		"iS": 31282,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1242x2148.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-1536x2048.png": {
+		"ft": 32768,
+		"iS": 30437,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1536x2048.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-1668x2224.png": {
+		"ft": 32768,
+		"iS": 33266,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-1668x2224.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-2048x2732.png": {
+		"ft": 32768,
+		"iS": 45090,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-2048x2732.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-640x1136.png": {
+		"ft": 32768,
+		"iS": 12256,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-640x1136.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/splash/launch-750x1294.png": {
+		"ft": 32768,
+		"iS": 15625,
+		"oA": 0,
+		"oAP": "/build/assets/splash/launch-750x1294.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/CNAME": {
 		"cB": 0,
 		"ft": 8192,
@@ -1072,7 +1149,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562122062.773049
+	"lastBuiltDate": 562175285.358603
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

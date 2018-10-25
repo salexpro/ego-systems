@@ -60,4 +60,4 @@ $('.header_hamb').click(function () {
 
 $('#menu').on('closed.zf.offcanvas', () => {
     $('.header_hamb').removeClass('is_active');
-})
+});
