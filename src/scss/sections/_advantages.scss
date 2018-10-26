@@ -1,15 +1,53 @@
 .advantages{
+    padding: 0 15px;
+    @include breakpoint(small down){
+        padding: 30px 6px 0;
+    }
+    .lead{
+        @include breakpoint(medium down){
+            max-width: 610px;
+            margin: auto;
+            br{
+                display: none;
+            }
+        }
+        @include breakpoint(small down){
+            max-width: 450px;
+        }
+    }
     &_items{
         margin-top: 54px;
+        @include breakpoint(small down){
+            margin-top: 36px;
+        }
     }
     &_item{
         display: flex;
         margin-bottom: 33px;
+        @include breakpoint(medium down){
+            margin-bottom: 13px;
+        }
+        @include breakpoint(small down){
+            max-width: 450px;
+        }
         &_icon{
             flex: 0 0 50px;
             width: 50px;
             height: 50px;
             margin-right: 20px;
+            background: rgba($white, 0.6);
+            @include breakpoint(small down){
+                flex: 0 0 40px;
+                width: 40px;
+                height: 40px;
+                margin-right: 12px;
+            }
+        }
+        &_content{
+            padding-top: 13px;
+            @include breakpoint(small down){
+                padding-top: 9px;
+            }
         }
         &_title{
             padding: 0;
@@ -20,6 +58,9 @@
         &_descr{
             margin: 0;
             font-size: 15px;
+            @include breakpoint(small down){
+                font-size: 14px;
+            }
         }
     }
 }

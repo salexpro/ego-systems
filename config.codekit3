@@ -345,6 +345,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/src/assets/favicon/og-image.jpg": {
+		"ft": 16384,
+		"iS": 101561,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/og-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"/src/assets/favicon/og-image.png": {
+		"ft": 32768,
+		"iS": 25652,
+		"oA": 0,
+		"oAP": "/build/assets/favicon/og-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/src/assets/favicon/safari-pinned-tab.svg": {
 		"ft": 2097152,
 		"miP": 1,
@@ -1149,7 +1171,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562200461.93547201
+	"lastBuiltDate": 562286470.91972995
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
