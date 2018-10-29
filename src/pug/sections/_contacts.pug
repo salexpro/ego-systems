@@ -1,0 +1,24 @@
+section.contacts
+    .grid-container
+        h1.text-center
+            | Контакты
+        p.lead.text-center
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            br
+            | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .contacts_block
+            .contacts_block_info
+                +details('contacts')
+                .contacts_block_button
+                    a.button.secondary.icon(href="")
+                        | Написать нам
+                        i
+                            +icon('plane', [20, 20], '#fff')
+            .contacts_block_map
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.9651306320652!2d30.336986299111658!3d59.91612604377037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963052858b1f35%3A0x259c755de4e7ee0b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgOTPQkCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTkyMDA3!5e0!3m2!1sru!2sua!4v1540917945935', width='410', height='270', frameborder='0', style='border:0', allowfullscreen='')
+        .grid-x.align-center.contacts_legal
+            h2.cell.text-center
+                | Юридическая информация
+            p.lead.cell.large-10.contacts_legal_text
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        hr

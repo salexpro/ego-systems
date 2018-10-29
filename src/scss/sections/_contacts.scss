@@ -1,0 +1,28 @@
+.contacts{
+    padding: 86px 0 0;
+    &_block{
+        background: rgba($white, 0.05);
+        border-radius: $global-radius;
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 40px;
+        margin: 74px 0 88px;
+        &_info{
+            display: flex;
+            flex-direction: column;
+        }
+        &_button{
+            margin-top: auto;
+            padding-left: 44px;
+        }
+        &_map{
+            width: 48%;
+        }
+    }
+    &_legal{
+        margin-bottom: 65px;
+        &_text{
+            margin-bottom: 0;
+        }
+    }
+}

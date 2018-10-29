@@ -1,29 +1,47 @@
 mixin details(mod)
-    ul.menu.vertical.details
-        li.details_item.details_item--phone
-            i
-                +icon('phone', [20, 20], '#228be6')
-            p
-                a(href="tel:88126409137")
-                    | 8 (812) 640-91-37
-                small ПН-ВС с 10:00 до 21:00
-        li.details_item
-            i
-                +icon('at', [20, 20], '#A6A8A9')
-            p
-                a(href="mailto:info@ego-system.ru" target='_blank')
-                    | info@ego-system.ru
-        li.details_item
-            i
-                +icon('mark', [20, 20], '#A6A8A9')
-            p
-                if mod == 'footer'
-                    | г. Санкт-Петербург, 
-                    br
-                    | наб. Обводного канала, 
-                    br
-                    | дом 93А
-                else
-                    | г. Санкт-Петербург, наб.
-                    br
-                    | Обводного канала, дом 93А
+    -
+        const details = [
+            {
+                icon: ['phone', [20, 20], '#228be6'],
+                text: '<a href="tel:88126409137">8 (812) 640-91-37</a>',
+                hint: 'ПН-ВС с 10:00 до 21:00 ',
+                mod: 'phone'
+            },
+            {
+                icon: ['at', [20, 20], '#A6A8A9'],
+                text: '<a href="mailto:info@ego-system.ru" target="_blank">info@ego-system.ru</a>'
+            },
+            {
+                icon: ['mark', [20, 20], '#A6A8A9'],
+                text: 'г. Санкт-Петербург, наб. <br>Обводного канала, дом 93А'
+            }
+        ]
+    
+    case mod
+        when 'footer'
+            - details[2].text = 'г. Санкт-Петербург, <br>наб. Обводного канала, <br>дом 93А'
+        when 'contacts'
+            -
+                details.splice(2, 1);
+                delete details[0].mod;
+                details.unshift({icon: ['mark', [24, 24], '#228be6', [20, 20]], text: 'г. Санкт-Петербург, наб. Обводного канала, <br>дом 93А', hint: details[0].hint});
+                details[1].hint = 'Телефон и факс';
+                details[1].icon[1] = [24, 24];
+                details[2].icon[2] = '#228be6';
+                details[1].icon[3] = [20, 20];
+                details[2].icon[1] = [24, 24];
+                details[2].icon[3] = [20, 20];
+                details[2].hint = 'По всем вопросам';
+                
+
+    
+    ul.menu.vertical.details(class=mod ? `details--${mod}` : false)
+        each item in details
+            li.details_item(class=item.hasOwnProperty('mod') ? `details_item--${item.mod}` : false)
+                i
+                    +icon(...item.icon)
+                p
+                    !=item.text
+                    if item.hasOwnProperty('hint')
+                        small
+                            =item.hint
