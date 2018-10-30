@@ -11,4 +11,4 @@ const pageWidget = pages => {
     });
 }
 
-pageWidget(['index', 'about', 'advantages', 'contacts', 'documents']);
+pageWidget(['index', 'about', 'advantages', 'contacts', 'documents', 'services']);

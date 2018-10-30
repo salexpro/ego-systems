@@ -11,10 +11,18 @@ mixin solution(icon, title, descr)
             | Услуги и цены
             +icon('arrow_right', [24, 24], '#adb5bd')
 
-section.solutions
+section.solutions(class=`solutions--${page}`)
     .grid-container
-        h1.text-center.solutions_header
-            | Меняем впечатление об охранных системах
+        if page == 'services'
+            h1.text-center.solutions_header
+                | Услуги охраны
+            p.lead.text-center.solutions_descr
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                br
+                | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        else
+            h1.text-center.solutions_header
+                | Меняем впечатление об охранных системах
         .grid-x.grid-margin-x.large-up-3.small-up-2.align-center.solutions_items
             +solution(['bussines', [62, 64], 'none',, '#fff'], 'Охрана бизнеса', 'Тревожная и охранная сигнализация <br>Установка систем видеонаблюдения <br>Физическая охрана')
             +solution(['apartment', [64, 64], 'none',, '#fff'], 'Охрана квартир', 'Тревожная и охранная сигнализация <br>Установка систем видеонаблюдения')
@@ -22,3 +30,6 @@ section.solutions
             +solution(['bodyguard', [64, 52], 'none',, '#fff'], 'Личная охрана')
             +solution(['event', [60, 64], 'none',, '#fff'], 'Охрана мероприятий')
             +solution(['complex', [56, 64], '#fff'], 'Комплексная охрана')
+
+        if page == 'services'
+            +cols('solutions')

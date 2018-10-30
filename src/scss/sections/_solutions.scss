@@ -3,6 +3,12 @@
     @include breakpoint(small down){
         padding: 30px 6px 18px;
     }
+    &--services{
+        padding: 86px 15px 28px;
+    }
+    &_descr{
+        margin-bottom: 86px;
+    }
     &_items{
         margin-top: 50px;
         @include breakpoint(small down){

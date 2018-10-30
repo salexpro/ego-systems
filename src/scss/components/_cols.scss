@@ -1,0 +1,18 @@
+.cols{
+    color: rgba($white, 0.85);
+    p{
+        font-size: 15px;
+        @include breakpoint(small down){
+            font-size: 14px;
+        }
+    }
+    &--about{
+        margin-top: 86px;
+        @include breakpoint(medium down){
+            margin-top: 26px;
+        }
+    }
+    &--solutions{
+        margin-top: 62px;
+    }
+}

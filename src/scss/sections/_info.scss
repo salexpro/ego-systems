@@ -10,19 +10,12 @@
         padding: 50px 6px 38px;
     }
     &_inner{
-        color: rgba($white, 0.85);
         @include breakpoint(medium down){
             max-width: 640px;
             margin: auto;
         }
         @include breakpoint(small down){
             max-width: 462px;
-        }
-    }
-    p{
-        font-size: 15px;
-        @include breakpoint(small down){
-            font-size: 14px;
         }
     }
 }
