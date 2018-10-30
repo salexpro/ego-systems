@@ -754,6 +754,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/news.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/news.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/services.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -1032,6 +1041,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/components/_pagination.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_pagination.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/components/_popup.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1264,7 +1286,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562630803.37926304
+	"lastBuiltDate": 562634197.536852
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

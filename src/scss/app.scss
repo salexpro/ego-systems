@@ -32,7 +32,7 @@ $contrast-warnings: false;
 // @include foundation-media-object;
 @include foundation-off-canvas;
 // @include foundation-orbit;
-// @include foundation-pagination;
+@include foundation-pagination;
 // @include foundation-progress-bar;
 // @include foundation-progress-element;
 // @include foundation-progress-element;
@@ -69,6 +69,7 @@ $contrast-warnings: false;
 @import 'components/breadcrumbs';
 @import 'components/details';
 @import 'components/cols';
+@import 'components/pagination';
 // @import 'components/offcanvas';
 
 // Sections

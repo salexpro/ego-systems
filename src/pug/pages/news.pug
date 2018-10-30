@@ -1,0 +1,9 @@
+extends ../_layout
+block const
+    -
+        const page = 'news'
+        const name = 'Новости и события'
+block content
+    +breadcrumbs([['Главная', 'index'], ['О компании', 'about'], ['Новости и события', 'news']])
+    include ../sections/_news
+    include ../sections/_questions

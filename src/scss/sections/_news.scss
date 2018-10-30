@@ -3,6 +3,12 @@
     @include breakpoint(small down){
         padding-top: 25px;
     }
+    &--tabs{
+        padding-top: 0;
+    }
+    &_header{
+        margin-bottom: 26px;
+    }
     &_inner{
         @include breakpoint(medium down){
             max-width: 640px;
@@ -17,6 +23,9 @@
                 max-width: 450px;
                 margin: auto;
             }
+        }
+        &--spaced{
+            margin-bottom: 37px;
         }
         + .news_item{
             @include breakpoint(medium down){
