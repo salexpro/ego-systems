@@ -727,6 +727,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/documents.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/documents.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -769,6 +778,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_contacts.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_documents.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_documents.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1074,6 +1092,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_documents.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_documents.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_footer.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1202,7 +1233,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562548552.74466205
+	"lastBuiltDate": 562614656.99830604
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

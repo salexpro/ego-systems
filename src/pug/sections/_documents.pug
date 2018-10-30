@@ -1,0 +1,21 @@
+mixin doc
+    .cell.documents_item
+        a.documents_item_img(href="#" target="_blank")
+            img(src="https://via.placeholder.com/430x560/e9ecef/000", alt="Документ")
+        .documents_item_bottom
+            p.documents_item_title
+                | Название документа
+            a.documents_item_pdf(href="#" target="_blank")
+                | Cмотреть документ (PDF)
+
+section.documents
+    .grid-container
+        h1.text-center
+            | Документы и сертификаты
+        p.lead.text-center
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            br
+            | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .grid-x.grid-margin-x.large-up-2.align-justify.documents_items
+            each _ in Array(4)
+                +doc

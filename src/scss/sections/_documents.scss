@@ -1,0 +1,28 @@
+.documents{
+    &_items{
+        margin-top: 94px;
+    }
+    &_item{
+        max-width: 430px;
+        &:not(:nth-last-child(-n+2)){
+            margin-bottom: 50px;
+        }
+        &_bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 17px;
+            font-size: 16px;
+            font-family: $header-font-family;
+            font-weight: 500;
+            letter-spacing: 0.32px;
+        }
+        &_title{
+            margin: 0;
+            line-height: 1.4;
+        }
+        &_pdf{
+            color: $medium-gray;
+        }
+    }
+}

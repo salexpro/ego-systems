@@ -1,0 +1,9 @@
+extends ../_layout
+block const
+    -
+        const page = 'documents'
+        const name = 'Документы и сертификаты'
+block content
+    +breadcrumbs([['Главная', 'index'], ['О компании', 'about'], ['Документы и сертификаты', 'documents']])
+    include ../sections/_documents
+    include ../sections/_questions
