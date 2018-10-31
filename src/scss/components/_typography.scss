@@ -35,6 +35,11 @@ h3, .h3{
 .lead{
     font-family: $header-font-family;
     font-weight: 500;
+    @include breakpoint(medium down){
+        br{
+            display: none;
+        }
+    }
     @include breakpoint(small down){
         font-size: 14px;
     }

@@ -11,13 +11,6 @@
             max-width: 740px;
         }
     }
-    &_descr{
-        @include breakpoint(medium down){
-            br{
-                display: none;
-            }
-        }
-    }
     &_block{
         background: rgba($white, 0.05);
         border-radius: $global-radius;
