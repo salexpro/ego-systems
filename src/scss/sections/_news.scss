@@ -4,7 +4,14 @@
         padding: 25px 18px 0;
     }
     &--tabs{
-        padding-top: 0;
+        padding: 0 30px;
+        @include breakpoint(medium down){
+            max-width: 670px;
+        }
+        @include breakpoint(small down){
+            padding: 30px 24px 0;
+            max-width: 498px;
+        }
     }
     &_header{
         margin-bottom: 26px;
@@ -26,6 +33,9 @@
         }
         &--spaced{
             margin-bottom: 37px;
+            @include breakpoint(medium down){
+                margin-bottom: 0;
+            }
         }
         + .news_item{
             @include breakpoint(medium down){
