@@ -27,8 +27,10 @@ button {
         }
     }
     &.icon{
+        &:not(.expanded){
+            min-width: 220px;
+        }
         display: inline-flex;
-        min-width: 220px;
         align-items: center;
         justify-content: space-between;
         padding: 10px 20px;

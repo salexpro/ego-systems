@@ -1,5 +1,23 @@
 .contacts{
     padding: 86px 0 0;
+    @include breakpoint(medium down){
+        padding: 46px 15px 0;   
+    }
+    @include breakpoint(small down){
+        padding: 30px 6px 0;
+    }
+    &_inner{
+        @include breakpoint(medium down){
+            max-width: 740px;
+        }
+    }
+    &_descr{
+        @include breakpoint(medium down){
+            br{
+                display: none;
+            }
+        }
+    }
     &_block{
         background: rgba($white, 0.05);
         border-radius: $global-radius;
@@ -7,20 +25,49 @@
         justify-content: space-between;
         padding: 60px 40px;
         margin: 74px 0 88px;
+        @include breakpoint(medium down){
+            margin: 54px 0 68px;
+            flex-direction: column;
+        }
+        @include breakpoint(small down){
+            margin: 36px 0 50px;
+            padding: 40px 12px;
+        }
         &_info{
             display: flex;
             flex-direction: column;
+            width: 48%;
+            @include breakpoint(medium down){
+                width: 100%;
+                margin-bottom: 60px;
+            }
+            @include breakpoint(small down){
+                margin-bottom: 40px;
+            }
         }
         &_button{
             margin-top: auto;
             padding-left: 44px;
+            padding-top: 34px;
+            @include breakpoint(small down){
+                padding-left: 36px;
+            }
         }
         &_map{
             width: 48%;
+            @include breakpoint(medium down){
+                width: 100%;
+            }
+            iframe{
+                display: block;
+            }
         }
     }
     &_legal{
         margin-bottom: 65px;
+        @include breakpoint(small down){
+            margin-bottom: 55px;
+        }
         &_text{
             margin-bottom: 0;
         }

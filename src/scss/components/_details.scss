@@ -2,18 +2,6 @@
     @include breakpoint(small down){
         font-size: 14px;
     }
-    &--contacts{
-        p, a{
-            color: $white;
-        }
-        i{
-            margin-right: 20px;
-        }
-        small{
-            margin-top: 4px;
-            color: #adb5bd;
-        }
-    }
     &_item{
         display: flex;
         color: rgba($white, 0.6);
@@ -46,6 +34,21 @@
             font-family: $body-font-family;
             font-size: 13px;
             display: block;
+        }
+    }
+    &--contacts{
+        p, a{
+            color: $white;
+        }
+        i{
+            margin-right: 20px;
+            @include breakpoint(small down){
+                margin-right: 12px;
+            }
+        }
+        small{
+            margin-top: 4px;
+            color: #adb5bd;
         }
     }
 }
