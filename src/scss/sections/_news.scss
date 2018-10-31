@@ -1,7 +1,7 @@
 .news{
     padding-top: 40px;
     @include breakpoint(small down){
-        padding-top: 25px;
+        padding: 25px 18px 0;
     }
     &--tabs{
         padding-top: 0;

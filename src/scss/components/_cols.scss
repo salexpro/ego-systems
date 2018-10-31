@@ -14,5 +14,19 @@
     }
     &--solutions{
         margin-top: 62px;
+        @include breakpoint(medium down){
+            .cell{
+                max-width: 610px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @include breakpoint(small down){
+            margin-top: 40px;
+            padding: 0 12px;
+            .cell{
+                max-width: 450px;
+            }
+        }
     }
 }
