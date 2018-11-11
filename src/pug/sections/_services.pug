@@ -12,13 +12,15 @@ mixin service
                 | Отправить заявку
 
 section.services
-    .grid-container
-        h1.text-center Охрана бизнеса
-        p.lead.text-center.services_descr
-            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-            br
-            |Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-        .grid-x.grid-margin-x.large-up-2.services_items
-            each _ in Array(4)
-                +service
+    .services_inner
+        .grid-container
+            h1.text-center Охрана бизнеса
+            p.lead.text-center.services_descr
+                | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                br
+                |Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            .grid-x.grid-margin-x.medium-up-2.services_items
+                each _ in Array(4)
+                    +service
+    .grid-container.services_text
         +cols('services')

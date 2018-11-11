@@ -1,23 +1,56 @@
 .services{
+    @include breakpoint(small down){
+        margin-top: 30px;
+    }
     &_descr{
         margin: 0;
     }
+    &_inner{
+        padding: 0 15px;
+        @include breakpoint(small down){
+            padding: 0 18px;
+        }
+    }
     &_items{
-        padding: 86px 0 32px;
-        border-bottom: 1px solid rgba($white, 0.05);
+        padding: 86px 0 0;
         margin-bottom: 86px;
+        @include breakpoint(medium down){
+            padding: 64px 0 0;
+            margin-bottom: 62px;
+        }
+        @include breakpoint(small down){
+            padding-top: 36px;
+            margin-bottom: 13px;
+        }
+        &::after{
+            content: '';
+            width: calc(100% - 30px);
+            margin-top: 32px;
+            margin-left: 15px;
+            border-bottom: 1px solid rgba($white, 0.05);
+            @include breakpoint(medium down){
+                margin-top: 12px;
+            }
+            @include breakpoint(small down){
+                display: none;
+            }
+        }
     }
     &_item{
         margin-bottom: 60px;
+        @include breakpoint(small down){
+            margin-bottom: 40px;
+        }
         &_img{
             display: block;
-            height: 250px;
+            height: 0;
+            padding-bottom: 55%;
             border-radius: 5px;
             background-color: #ced4da;
             margin-bottom: 32px;
         }
         &_header{
-            margin: 0;
+            padding: 0;
             &::after{
                 display: none;
             }
@@ -25,6 +58,18 @@
         &_descr{
             color: rgba($white, 0.6);
             margin-bottom: 18px;
+        }
+        &_bottom{
+            @include breakpoint(medium down){
+                .gray{
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+    &_text{
+        @include breakpoint(small down){
+            padding: 0 18px;
         }
     }
 }

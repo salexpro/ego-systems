@@ -31,5 +31,10 @@
     }
     &--services{
         margin-bottom: 25px;
+        @include breakpoint(medium down){
+            max-width: 630px;
+            margin: 0 auto 5px;
+
+        }
     }
 }
