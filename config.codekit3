@@ -772,6 +772,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/services_category.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/services_category.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/sections/_about.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -886,6 +895,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_questions.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_services.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_services.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1262,6 +1280,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/src/scss/sections/_services.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_services.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/src/scss/sections/_solutions.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1286,7 +1317,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 562716332.34231603
+	"lastBuiltDate": 563653641.10188198
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

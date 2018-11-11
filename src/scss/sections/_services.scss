@@ -1,0 +1,30 @@
+.services{
+    &_descr{
+        margin: 0;
+    }
+    &_items{
+        padding: 86px 0 32px;
+        border-bottom: 1px solid rgba($white, 0.05);
+        margin-bottom: 86px;
+    }
+    &_item{
+        margin-bottom: 60px;
+        &_img{
+            display: block;
+            height: 250px;
+            border-radius: 5px;
+            background-color: #ced4da;
+            margin-bottom: 32px;
+        }
+        &_header{
+            margin: 0;
+            &::after{
+                display: none;
+            }
+        }
+        &_descr{
+            color: rgba($white, 0.6);
+            margin-bottom: 18px;
+        }
+    }
+}

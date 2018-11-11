@@ -1,0 +1,10 @@
+extends ../_layout
+block const
+    -
+        const page = 'services_category'
+        const name = 'Охрана бизнеса'
+block content
+    +breadcrumbs([['Главная', 'index'], ['О компании', 'about'], ['Охрана бизнеса', 'services_category']])
+    include ../sections/_services
+    include ../sections/_news
+    include ../sections/_questions

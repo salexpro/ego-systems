@@ -25,6 +25,14 @@ button {
         &.gray{
             border-color: #343a40;
         }
+        &.thick{
+            border-width: 2px;
+            border-color: #495057;
+            min-width: auto;
+            &:hover{
+                color: $white;
+            }
+        }
     }
     &.icon{
         &:not(.expanded){

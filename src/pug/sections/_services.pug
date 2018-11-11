@@ -1,0 +1,24 @@
+mixin service
+    .cell.services_item
+        a.services_item_img(href="#")
+        h3.services_item_header
+            | Тревожная и охранная сигнализация
+        p.services_item_descr
+            | Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+        .grid-x.grid-margin-x.large-up-2.services_item_bottom
+            a.cell.button.secondary(href="#")
+                    | Подробнее
+            a.cell.button.hollow.gray.thick(href="#")
+                | Отправить заявку
+
+section.services
+    .grid-container
+        h1.text-center Охрана бизнеса
+        p.lead.text-center.services_descr
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            br
+            |Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        .grid-x.grid-margin-x.large-up-2.services_items
+            each _ in Array(4)
+                +service
+        +cols('services')
