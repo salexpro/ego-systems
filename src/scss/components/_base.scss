@@ -89,8 +89,15 @@ html, body{
     height: 24px;
     &:checked + label{
         &::before{
-            box-shadow: inset 0 0 0px #373b40;
-            // box-shadow: inset 0 0 10px transparent;
+            // box-shadow: inset 0 0 0px #373b40;
+            background-image: url('data:image/svg+xml;utf-8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13.8805 6.29006L8.00047 12.1701L6.12047 10.2901C5.73047 9.90006 5.10047 9.90006 4.71047 10.2901C4.32047 10.6801 4.32047 11.3101 4.71047 11.7001L7.30047 14.2901C7.69047 14.6801 8.32047 14.6801 8.71047 14.2901L15.3005 7.70006C15.6905 7.31006 15.6905 6.68006 15.3005 6.29006C14.9105 5.90006 14.2705 5.90006 13.8805 6.29006Z" fill="#F67329"/></svg>');
+        }
+        &.item_calc_item{
+            &::before{
+                border-color: $secondary-color;
+                background-image: url('data:image/svg+xml;utf-8,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13.8805 6.29006L8.00047 12.1701L6.12047 10.2901C5.73047 9.90006 5.10047 9.90006 4.71047 10.2901C4.32047 10.6801 4.32047 11.3101 4.71047 11.7001L7.30047 14.2901C7.69047 14.6801 8.32047 14.6801 8.71047 14.2901L15.3005 7.70006C15.6905 7.31006 15.6905 6.68006 15.3005 6.29006C14.9105 5.90006 14.2705 5.90006 13.8805 6.29006Z" fill="#313438"/></svg>');
+                background-color: $secondary-color;
+            }
         }
     }
     + label{
@@ -108,9 +115,13 @@ html, body{
             border-radius: 50%;
             background-position: center;
             background-size: 18px 18px;
-            background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTAgMEM0LjQ4IDAgMCA0LjQ4IDAgMTBDMCAxNS41MiA0LjQ4IDIwIDEwIDIwQzE1LjUyIDIwIDIwIDE1LjUyIDIwIDEwQzIwIDQuNDggMTUuNTIgMCAxMCAwWk0xMCAxOEM1LjU5IDE4IDIgMTQuNDEgMiAxMEMyIDUuNTkgNS41OSAyIDEwIDJDMTQuNDEgMiAxOCA1LjU5IDE4IDEwQzE4IDE0LjQxIDE0LjQxIDE4IDEwIDE4Wk0xMy44OCA2LjI5TDggMTIuMTdMNi4xMiAxMC4yOUM1LjczIDkuOSA1LjEgOS45IDQuNzEgMTAuMjlDNC4zMiAxMC42OCA0LjMyIDExLjMxIDQuNzEgMTEuN0w3LjMgMTQuMjlDNy42OSAxNC42OCA4LjMyIDE0LjY4IDguNzEgMTQuMjlMMTUuMyA3LjdDMTUuNjkgNy4zMSAxNS42OSA2LjY4IDE1LjMgNi4yOUMxNC45MSA1LjkgMTQuMjcgNS45IDEzLjg4IDYuMjlaIiBmaWxsPSIjRjY3MzI5Ii8+PC9zdmc+);
-            box-shadow: inset 0 0 0 10px #373b40;
+            // box-shadow: inset 0 0 0 10px #373b40;
             transition: 250ms;
+        }
+        &.item_calc_item{
+            &::before{
+                border-color: #868e96;
+            }
         }
     }
 }

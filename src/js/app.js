@@ -10,6 +10,7 @@
 @codekit-prepend quiet '../../node_modules/owl.carousel/dist/owl.carousel.min';
 
 @codekit-append quiet 'components/_carousel.js';
+@codekit-append quiet 'components/_calc.js';
 */
 
 $(document).foundation();

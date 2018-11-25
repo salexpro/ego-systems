@@ -1,0 +1,9 @@
+extends ../_layout
+block const
+    -
+        const page = 'services_item'
+        const name = 'Тревожная и охранная сигнализация'
+block content
+    +breadcrumbs([['Главная', 'index'], ['Услуги', 'services'], ['Охрана бизнеса', 'services_category'], ['Тревожная и охранная сигнализация', 'services_item']])
+    include ../sections/_item
+    include ../sections/_questions

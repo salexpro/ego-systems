@@ -1,0 +1,153 @@
+-
+    const calc_data = [
+        {
+            title: `Базовый пакет:
+                    <br>- охранная панель - 1 шт.,
+                    <br>- датчик движения - 2 шт.,
+                    <br>- датчик на дверь - 1 шт.`,
+            price: 'от 14 990'
+        },
+        {
+            title: 'Доп. датчик движения',
+            price: '2 870'
+        },
+        {
+            title: 'Доп. датчик на дверь',
+            price: '2 270'
+        },
+        {
+            title: 'Тревожная кнопка',
+            price: 'от 5 990'
+        },
+        {
+            title: 'Датчик дыма',
+            price: 'от 2610'
+        },
+        {
+            title: 'Датчик протечки воды',
+            price: 'от 2450'
+        },
+        {
+            title: 'Датчик разбития стекла',
+            price: 'от 3199'
+        },
+        {
+            title: 'Ручной пожарный извещатель',
+            price: 'от 2770'
+        },
+        {
+            title: 'Радиобрелок',
+            price: 'от 860'
+        },
+        {
+            title: 'Сирена',
+            price: 'от 4499'
+        }
+    ]
+
+
+section.item
+    .grid-container
+        h1.text-center
+            =name
+        .grid-x.grid-margin-x.large-up-2.item_content
+            .cell
+                .item_offers
+                    h3.item_offers_header
+                        | Мы предлагаем:
+                    ul.no-bullet.item_offers_list
+                        li
+                            | Надежное проводное и беспроводное оборудование, проверенное временем, простое в использовании  
+                        li
+                            | Оперативное реагирование по сигналу "тревога"  
+                        li
+                            | Прибытие вооруженной дежурной группы "БОРС" за 5-7 минут  
+                        li
+                            | Высокий уровень сервиса и обслуживания  
+                        li
+                            | Бесплатная консультация по вопросам безопасности  
+                        li
+                            | Установка не позднее 2-х дней с момента обращения  
+                        li
+                            | Бесплатное переключение установленного оборудования.  
+                .item_case
+                    a.item_case_img(href="#")
+                        .item_case_label
+                            | Наш объект
+                        img(src="//picsum.photos/450/280?random", alt="Комплексная охрана квартиры бизнесмена из Санкт-Питербурга")
+                    h3.item_case_header
+                        a(href="#")
+                            | Комплексная охрана квартиры бизнесмена из Санкт-Питербурга
+                    p.item_case_descr
+                        | Lenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        br
+                        | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                        br
+                        | Phasellus viverra nulla ut metus varius laoreet.
+                    .grid-x.grid-margin-x.large-up-2.item_case_bottom
+                        a.cell.button(href="#")
+                            | Читать
+                        a.cell.button.hollow.gray.thick(href="./services_category.html")
+                            | Все объекты
+                            
+            form.cell.item_calc(action="")
+                h3.item_calc_header
+                    | Калькулятор стоимости
+                each item, i in calc_data
+                    input(type="checkbox" name=`serv${i}` value=item.price.replace(/[^0-9\.]/g, '') id=`serv${i}` checked=(i===0) ? '' : false)
+                    label.item_calc_item(for=`serv${i}`)
+                        .item_calc_item_title
+                            !=item.title
+                        b.item_calc_item_price
+                            =item.price + ' ₽'
+                .item_calc_bottom
+                    button.button.secondary.icon
+                        | Отправить заявку
+                        i
+                            +icon('plane', [20, 20], '#fff')
+                    .item_calc_total
+                        | 14 990 ₽
+
+        .grid-x.grid-margin-x.large-up-2.item_content
+            .cell.item_offers
+                h3.item_offers_header
+                    | Мы предлагаем:
+                ul.no-bullet.item_offers_list
+                    li
+                        | Надежное проводное и беспроводное оборудование, проверенное временем, простое в использовании  
+                    li
+                        | Оперативное реагирование по сигналу "тревога"  
+                    li
+                        | Прибытие вооруженной дежурной группы "БОРС" за 5-7 минут  
+                    li
+                        | Высокий уровень сервиса и обслуживания  
+                    li
+                        | Бесплатная консультация по вопросам безопасности  
+                    li
+                        | Установка не позднее 2-х дней с момента обращения  
+                    li
+                        | Бесплатное переключение установленного оборудования.  
+            .cell.item_case
+                a.item_case_img(href="#")
+                    .item_case_label
+                        | Наш объект
+                    img(src="//picsum.photos/450/280?random" + Math.random(), alt="Комплексная охрана квартиры бизнесмена из Санкт-Питербурга")
+                h3.item_case_header
+                    a(href="#")
+                        | Комплексная охрана квартиры бизнесмена из Санкт-Питербурга
+                p.item_case_descr
+                    | Lenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                    br
+                    | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                    br
+                    | Phasellus viverra nulla ut metus varius laoreet.
+                .grid-x.grid-margin-x.large-up-2.item_case_bottom
+                    a.cell.button(href="#")
+                        | Читать
+                    a.cell.button.hollow.gray.thick(href="./services_category.html")
+                        | Все объекты
+
+        .grid-x.grid-margin-x.align-center.large-up-4.medium-up-2
+            each _ in Array(4)
+                +offer
+        +cols('solutions')
