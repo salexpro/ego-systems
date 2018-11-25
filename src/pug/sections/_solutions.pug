@@ -30,6 +30,12 @@ section.solutions(class=`solutions--${page}`)
             +solution(['bodyguard', [64, 52], 'none',, '#fff'], 'Личная охрана')
             +solution(['event', [60, 64], 'none',, '#fff'], 'Охрана мероприятий')
             +solution(['complex', [56, 64], '#fff'], 'Комплексная охрана')
-
+        .grid-x.grid-margin-x.align-center
+            a.cell.small-12.solutions_item.solutions_item--wide(href="#")
+                h3.secondary.solutions_item_title
+                    | Юридическая охрана
+                span.solutions_item_bottom
+                    | Услуги и цены
+                    +icon('arrow_right', [24, 24], '#adb5bd')
         if page == 'services'
             +cols('solutions')

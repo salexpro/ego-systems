@@ -43,6 +43,33 @@
             max-width: 220px;
             margin-bottom: 12px;
         }
+        &--wide{
+            max-width: 100%;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 23px;
+            padding-bottom: 23px;
+            @include breakpoint(medium down){
+                max-width: 610px;
+            }
+            @include breakpoint(small down){
+                max-width: 450px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+            }
+            .solutions_item{
+                &_title{
+                    margin: 0;
+                    padding: 0;
+                    &::after{
+                        display: none;
+                    }
+                }
+                &_bottom{
+                    margin: 0;
+                }
+            }
+        }
         &_icon{
             height: 64px;
             display: flex;
@@ -71,6 +98,12 @@
                 margin-top: 5px;
                 font-size: 14px;
                 letter-spacing: 0.28px;
+            }
+            svg{
+                margin-left: 12px;
+                @include breakpoint(small down){
+                    margin: 0;
+                }
             }
         }
     }
