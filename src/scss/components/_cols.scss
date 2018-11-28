@@ -37,4 +37,9 @@
 
         }
     }
+    &--item{
+        @include breakpoint(small down){
+            padding: 0;
+        }
+    }
 }

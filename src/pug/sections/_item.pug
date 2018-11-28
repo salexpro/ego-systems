@@ -74,7 +74,7 @@ section.item
                     a.item_case_img(href="#")
                         .item_case_label
                             | Наш объект
-                        img(src="//picsum.photos/450/280?random", alt="Комплексная охрана квартиры бизнесмена из Санкт-Питербурга")
+                        img(src="//picsum.photos/900/560?random", alt="Комплексная охрана квартиры бизнесмена из Санкт-Питербурга")
                     h3.item_case_header
                         a(href="#")
                             | Комплексная охрана квартиры бизнесмена из Санкт-Питербурга
@@ -84,70 +84,73 @@ section.item
                         | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
                         br
                         | Phasellus viverra nulla ut metus varius laoreet.
-                    .grid-x.grid-margin-x.large-up-2.item_case_bottom
+                    .grid-x.grid-margin-x.medium-up-2.item_case_bottom
                         a.cell.button(href="#")
                             | Читать
                         a.cell.button.hollow.gray.thick(href="./services_category.html")
                             | Все объекты
                             
-            form.cell.item_calc(action="")
-                h3.item_calc_header
-                    | Калькулятор стоимости
-                each item, i in calc_data
-                    input(type="checkbox" name=`serv${i}` value=item.price.replace(/[^0-9\.]/g, '') id=`serv${i}` checked=(i===0) ? '' : false)
-                    label.item_calc_item(for=`serv${i}`)
-                        .item_calc_item_title
-                            !=item.title
-                        b.item_calc_item_price
-                            =item.price + ' ₽'
-                .item_calc_bottom
-                    button.button.secondary.icon
-                        | Отправить заявку
-                        i
-                            +icon('plane', [20, 20], '#fff')
-                    .item_calc_total
-                        | 14 990 ₽
+            .cell
+                form.item_calc(action="")
+                    h3.item_calc_header
+                        | Калькулятор стоимости
+                    each item, i in calc_data
+                        input(type="checkbox" name=`serv${i}` value=item.price.replace(/[^0-9\.]/g, '') id=`serv${i}` checked=(i===0) ? '' : false)
+                        label.item_calc_item(for=`serv${i}`)
+                            .item_calc_item_title
+                                !=item.title
+                            b.item_calc_item_price
+                                =item.price + ' ₽'
+                    .item_calc_bottom
+                        button.button.secondary.icon
+                            | Отправить заявку
+                            i
+                                +icon('plane', [20, 20], '#fff')
+                        .item_calc_total
+                            | 14 990 ₽
 
         .grid-x.grid-margin-x.large-up-2.item_content
-            .cell.item_offers
-                h3.item_offers_header
-                    | Мы предлагаем:
-                ul.no-bullet.item_offers_list
-                    li
-                        | Надежное проводное и беспроводное оборудование, проверенное временем, простое в использовании  
-                    li
-                        | Оперативное реагирование по сигналу "тревога"  
-                    li
-                        | Прибытие вооруженной дежурной группы "БОРС" за 5-7 минут  
-                    li
-                        | Высокий уровень сервиса и обслуживания  
-                    li
-                        | Бесплатная консультация по вопросам безопасности  
-                    li
-                        | Установка не позднее 2-х дней с момента обращения  
-                    li
-                        | Бесплатное переключение установленного оборудования.  
-            .cell.item_case
-                a.item_case_img(href="#")
-                    .item_case_label
-                        | Наш объект
-                    img(src="//picsum.photos/450/280?random" + Math.random(), alt="Комплексная охрана квартиры бизнесмена из Санкт-Питербурга")
-                h3.item_case_header
-                    a(href="#")
-                        | Комплексная охрана квартиры бизнесмена из Санкт-Питербурга
-                p.item_case_descr
-                    | Lenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                    br
-                    | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-                    br
-                    | Phasellus viverra nulla ut metus varius laoreet.
-                .grid-x.grid-margin-x.large-up-2.item_case_bottom
-                    a.cell.button(href="#")
-                        | Читать
-                    a.cell.button.hollow.gray.thick(href="./services_category.html")
-                        | Все объекты
+            .cell
+                .item_offers
+                    h3.item_offers_header
+                        | Мы предлагаем:
+                    ul.no-bullet.item_offers_list
+                        li
+                            | Надежное проводное и беспроводное оборудование, проверенное временем, простое в использовании  
+                        li
+                            | Оперативное реагирование по сигналу "тревога"  
+                        li
+                            | Прибытие вооруженной дежурной группы "БОРС" за 5-7 минут  
+                        li
+                            | Высокий уровень сервиса и обслуживания  
+                        li
+                            | Бесплатная консультация по вопросам безопасности  
+                        li
+                            | Установка не позднее 2-х дней с момента обращения  
+                        li
+                            | Бесплатное переключение установленного оборудования.  
+            .cell
+                .item_case
+                    a.item_case_img(href="#")
+                        .item_case_label
+                            | Наш объект
+                        img(src="//picsum.photos/900/560?random&" + Math.random(), alt="Комплексная охрана квартиры бизнесмена из Санкт-Питербурга")
+                    h3.item_case_header
+                        a(href="#")
+                            | Комплексная охрана квартиры бизнесмена из Санкт-Питербурга
+                    p.item_case_descr
+                        | Lenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        br
+                        | Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+                        br
+                        | Phasellus viverra nulla ut metus varius laoreet.
+                    .grid-x.grid-margin-x.medium-up-2.item_case_bottom
+                        a.cell.button(href="#")
+                            | Читать
+                        a.cell.button.hollow.gray.thick(href="./services_category.html")
+                            | Все объекты
 
         .grid-x.grid-margin-x.align-center.large-up-4.medium-up-2
             each _ in Array(4)
                 +offer
-        +cols('solutions')
+        +cols('solutions cols--item')
