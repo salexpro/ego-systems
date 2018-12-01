@@ -3,6 +3,7 @@
     padding: 50px 40px;
     border-radius: $global-radius;
     @include breakpoint(small down){
+        padding: 50px 24px;
         max-width: 450px;
         margin: auto;
     }

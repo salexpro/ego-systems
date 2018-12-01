@@ -5,8 +5,10 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.box.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.keyboard.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.triggers.min.js';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.util.motion.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.tabs.min.js';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min.js';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.reveal.min.js';
 @codekit-prepend quiet '../../node_modules/owl.carousel/dist/owl.carousel.min';
 
 @codekit-append quiet 'components/_carousel.js';

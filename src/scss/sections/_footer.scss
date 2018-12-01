@@ -177,6 +177,9 @@
         @include breakpoint(small down){
             margin-top: 35px;
             flex-direction: column;
+            > .cell{
+                flex: 0 0 auto;
+            }
         }
         a{
             color: rgba($white, 0.6);

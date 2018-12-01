@@ -1,0 +1,25 @@
+mixin contact(mod)
+    section.contact(class=mod ? 'contact--' + mod : false)
+        .grid-container
+            .grid-x.grid-margin-x.align-justify.align-middle
+                .cell.auto
+                    h2.contact_header
+                        | Вам что-то угрожает?
+                    p.contact_descr
+                        | Отправьте свои контактные данные и мы свяжемся 
+                        br
+                        | с Вами как можно скорее
+                .cell.large-5.medium-6
+                    form.form(action="")
+                        .form_input
+                            input(type="text" name="name" placeholder="Имя" required)
+                        .form_input
+                            input(type="tel" name="phone" placeholder="Телефон" required)
+                        .form_input
+                            input(type="checkbox" id=`agreement${mod ? '_' + mod : false}` name="agreement" value="true" checked required)
+                            label(for=`agreement${mod ? '_' + mod : false}`)
+                                | Я даю разрешение на обработку персональных данных
+                        button.button.expanded.secondary.icon
+                            | Отправить
+                            i
+                                +icon('plane', [20, 20], '#fff')

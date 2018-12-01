@@ -3,6 +3,29 @@
     @include breakpoint(small down){
         padding: 25px 6px;
     }
+    &--popup{
+        padding: 0;
+        @include breakpoint(small down){
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .grid-container{
+            padding: 0;
+            // @include breakpoint(small down){
+            //     flex: 0 0 auto;
+            // }
+        }
+        .auto{
+            order: 1;
+            @include breakpoint(small down){
+                order: -1;
+            }
+        }
+        .form{
+            max-width: 370px;
+        }
+    }
     &_header{
         @extend .h3;
         font-size: 32px;
