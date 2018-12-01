@@ -1,0 +1,9 @@
+extends ../_layout
+block const
+    -
+        const page = 'text'
+        const name = 'Текстовая страница'
+block content
+    +breadcrumbs([['Главная', 'index'], ['Услуги', 'services'], ['Охрана бизнеса', 'services_category'], ['Тревожная и охранная сигнализация', 'services_item']])
+    include ../sections/_text
+    include ../sections/_questions

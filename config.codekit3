@@ -809,6 +809,15 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"/src/pug/pages/text.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/text.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pug/sections/_about.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -950,6 +959,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_solutions.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_text.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_text.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -1355,6 +1373,19 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/src/scss/sections/_text.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_text.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -1367,7 +1398,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/src/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 565137759.317559
+	"lastBuiltDate": 565387675.20412099
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

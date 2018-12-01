@@ -1,0 +1,167 @@
+.text{
+    @include breakpoint(small down){
+        padding: 30px 6px 0;
+    }
+    p{
+        font-size: 15px;
+        text-align: justify;
+        line-height: 1.54;
+        @include breakpoint(small down){
+            font-size: 14px;
+        }
+    }
+    strong{
+        font-weight: 900;
+    }
+    i{
+        font-family: Georgia, serif;
+        font-size: 17px;
+        @include breakpoint(small down){
+            font-size: 16px;
+        }
+    }
+    h1{
+        margin-bottom: 40px;
+        @include breakpoint(small down){
+            margin-bottom: 25px;
+        }
+    }
+    h2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        @include breakpoint(medium down){
+            font-size: 23px;
+        }
+        @include breakpoint(small down){
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+    }
+    h3{
+        margin-top: 46px;
+        margin-bottom: 24px;
+        padding: 0;
+        font-size: 20px;
+        @include breakpoint(small down){
+            font-size: 16px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        &::after{
+            display: none;
+        }
+    }
+    a{
+        text-decoration: underline;
+        color: $primary-color;
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+    img{
+        border-radius: $global-radius;
+        overflow: hidden;
+        margin-top: 34px;
+        display: block;
+        margin-bottom: 1rem;
+        width: 100%;
+        @include breakpoint(small down){
+            margin-top: 16px;
+        }
+    }
+    ul{
+        margin: 26px 0 26px 16px;
+        list-style: none;
+        @include breakpoint(small down){
+            margin: 10px 0 10px 6px;
+        }
+        li{
+            &::before{
+                content: '';
+                flex: 0 0 8px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: $primary-color;
+                margin-right: 16px;
+                margin-top: 7px;
+                @include breakpoint(small down){
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    ol{
+        margin: 26px 0 26px 16px;
+        counter-reset: ol;
+        @include breakpoint(small down){
+            margin: 10px 0 10px 6px;
+        }
+        li{
+            counter-increment: ol;
+            &::before{
+                content: counter(ol) '.';
+                font-weight: 700;
+                margin-right: 12px;
+                @include breakpoint(small down){
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+    li{
+        font-size: 15px;
+        line-height: 1.55;
+        display: flex;
+        @include breakpoint(small down){
+            font-size: 14px;
+        }
+        + li{
+            margin-top: 8px;
+        }
+    }
+}
+
+figure{
+    margin-top: 33px;
+    margin-bottom: 26px;
+    @include breakpoint(small down){
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+    img{
+        margin: 0 !important;
+    }
+    figcaption{
+        margin-top: 10px;
+        color: $medium-gray;
+        @include breakpoint(small down){
+            margin-top: 6px;
+            font-size: 12px;
+        }
+    }
+}
+
+blockquote{
+    margin: 40px 0;
+    font-family: $header-font-family;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    text-align: justify;
+    line-height: 1.45;
+    @include breakpoint(small down){
+        margin: 24px 0;
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 1.38;
+        border-left-width: 2px;
+    }
+}
+
+hr{
+    @include breakpoint(small down){
+        margin: 17px 0;
+    }
+}

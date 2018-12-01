@@ -103,7 +103,7 @@
         margin-top: -24px;
         @include breakpoint(medium down){
             max-width: 610px;
-            margin: 30px auto 0;
+            margin: 0 auto 30px;
         }
         @include breakpoint(small down){
             max-width: 450px;
