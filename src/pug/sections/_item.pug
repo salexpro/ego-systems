@@ -5,43 +5,53 @@
                     <br>- охранная панель - 1 шт.,
                     <br>- датчик движения - 2 шт.,
                     <br>- датчик на дверь - 1 шт.`,
-            price: 'от 14 990'
+            price: 'от 14 990',
+            service: 200
         },
         {
             title: 'Доп. датчик движения',
-            price: '2 870'
+            price: '2 870',
+            service: 400
         },
         {
             title: 'Доп. датчик на дверь',
-            price: '2 270'
+            price: '2 270',
+            service: 230
         },
         {
             title: 'Тревожная кнопка',
-            price: 'от 5 990'
+            price: 'от 5 990',
+            service: 220
         },
         {
             title: 'Датчик дыма',
-            price: 'от 2610'
+            price: 'от 2610',
+            service: 430
         },
         {
             title: 'Датчик протечки воды',
-            price: 'от 2450'
+            price: 'от 2450',
+            service: 350
         },
         {
             title: 'Датчик разбития стекла',
-            price: 'от 3199'
+            price: 'от 3199',
+            service: 560
         },
         {
             title: 'Ручной пожарный извещатель',
-            price: 'от 2770'
+            price: 'от 2770',
+            service: 170
         },
         {
             title: 'Радиобрелок',
-            price: 'от 860'
+            price: 'от 860',
+            service: 250
         },
         {
             title: 'Сирена',
-            price: 'от 4499'
+            price: 'от 4499',
+            service: 400
         }
     ]
 
@@ -95,7 +105,7 @@ section.item
                     h3.item_calc_header
                         | Калькулятор стоимости
                     each item, i in calc_data
-                        input(type="checkbox" name=`serv${i}` value=item.price.replace(/[^0-9\.]/g, '') id=`serv${i}` checked=(i===0) ? '' : false)
+                        input(type="checkbox" name=`serv${i}` value={price: Number(item.price.replace(/[^0-9\.]/g, '')), service: item.service} id=`serv${i}` checked=(i===0) ? '' : false)
                         label.item_calc_item(for=`serv${i}`)
                             .item_calc_item_title
                                 !=item.title
@@ -107,7 +117,7 @@ section.item
                             i
                                 +icon('plane', [20, 20], '#fff')
                         .item_calc_total
-                            | 14 990 ₽
+                            | — ₽
 
         .grid-x.grid-margin-x.large-up-2.item_content
             .cell
