@@ -2,11 +2,10 @@ const numberWithSpaces = x => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 
 const recalc = form => {
     const data = new FormData(form);
-    const sum = [...data.values()].reduce((sum, item) => {
-        const value = JSON.parse(item);
-        return sum + value.price + value.service;
-    }, 0);
-    $('.item_calc_total').text(numberWithSpaces(sum) + ' ₽');
+    const total = [...data.values()].reduce((sum, item) => sum + JSON.parse(item).price, 0);
+    const service = [...data.values()].reduce((sum, item) => sum + JSON.parse(item).service, 0);
+    $('.item_calc_total_price').text(numberWithSpaces(total) + ' ₽');
+    $('.item_calc_total_service').text(numberWithSpaces(service) + ' ₽');
 }
 
 const form = document.querySelector('.item_calc');
